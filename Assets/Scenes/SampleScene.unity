@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 668267}
   - component: {fileID: 668266}
   m_Layer: 5
-  m_Name: Title
+  m_Name: Place Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -403,7 +403,7 @@ GameObject:
   - component: {fileID: 133870742}
   - component: {fileID: 133870741}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Gallery List Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1013,7 +1013,7 @@ GameObject:
   - component: {fileID: 446310930}
   - component: {fileID: 446310929}
   m_Layer: 5
-  m_Name: Description
+  m_Name: Place Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1152,7 +1152,7 @@ GameObject:
   - component: {fileID: 527873632}
   - component: {fileID: 527873634}
   m_Layer: 5
-  m_Name: Icons below
+  m_Name: ButtonPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1798,7 +1798,7 @@ GameObject:
   - component: {fileID: 998441159}
   - component: {fileID: 998441158}
   m_Layer: 5
-  m_Name: Exitbutton
+  m_Name: Exit Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2908,7 +2908,7 @@ GameObject:
   - component: {fileID: 1996779255}
   - component: {fileID: 1996779254}
   m_Layer: 5
-  m_Name: Image
+  m_Name: ImagePlace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
