@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 20b8ae84f5f8fa149987e666fd53b954
+guid: b691f5439f558414cbcfae4f92faba5c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4178046375966092550
-    second: 4_0
+      213: 8319604857822907328
+    second: QR Code Scanner_0
   - first:
-      213: 8982099749623107299
-    second: 4_1
+      213: 4798900709093818355
+    second: QR Code Scanner_1
   - first:
-      213: -2214249495721929474
-    second: 4_2
+      213: -2402621486034904823
+    second: QR Code Scanner_2
   - first:
-      213: 7945056504642708236
-    second: 4_3
+      213: -2437259394758824175
+    second: QR Code Scanner_3
   - first:
-      213: -10500422234371694
-    second: 4_4
+      213: 4067211929382889629
+    second: QR Code Scanner_4
   - first:
-      213: -4683111340605770916
-    second: 4_5
+      213: -6228813194401921692
+    second: QR Code Scanner_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +61,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -99,33 +99,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Win64
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -141,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 4_0
+      name: QR Code Scanner_0
       rect:
         serializedVersion: 2
         x: 14
@@ -156,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af2de6115f89406c0800000000000000
-      internalID: -4178046375966092550
+      spriteID: 0cb062ef98c257370800000000000000
+      internalID: 8319604857822907328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 4_1
+      name: QR Code Scanner_1
       rect:
         serializedVersion: 2
         x: 125
@@ -178,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ee09611224d6ac70800000000000000
-      internalID: 8982099749623107299
+      spriteID: 3ff38ede4ce199240800000000000000
+      internalID: 4798900709093818355
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 4_2
+      name: QR Code Scanner_2
       rect:
         serializedVersion: 2
         x: 553
@@ -200,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef41863b0d76541e0800000000000000
-      internalID: -2214249495721929474
+      spriteID: 9091b23fc7c28aed0800000000000000
+      internalID: -2402621486034904823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 4_3
+      name: QR Code Scanner_3
       rect:
         serializedVersion: 2
         x: 727
@@ -222,14 +196,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c03a2a7dbc2824e60800000000000000
-      internalID: 7945056504642708236
+      spriteID: 11faaed5e7d1d2ed0800000000000000
+      internalID: -2437259394758824175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 4_4
+      name: QR Code Scanner_4
       rect:
         serializedVersion: 2
         x: 12
@@ -244,14 +218,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2998abeebe1badff0800000000000000
-      internalID: -10500422234371694
+      spriteID: d98291563b3a17830800000000000000
+      internalID: 4067211929382889629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 4_5
+      name: QR Code Scanner_5
       rect:
         serializedVersion: 2
         x: 697
@@ -266,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c53f6934c0f320fb0800000000000000
-      internalID: -4683111340605770916
+      spriteID: 465486fb66fce89a0800000000000000
+      internalID: -6228813194401921692
       vertices: []
       indices: 
       edges: []
@@ -276,14 +250,20 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      QR Code Scanner_0: 8319604857822907328
+      QR Code Scanner_1: 4798900709093818355
+      QR Code Scanner_2: -2402621486034904823
+      QR Code Scanner_3: -2437259394758824175
+      QR Code Scanner_4: 4067211929382889629
+      QR Code Scanner_5: -6228813194401921692
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
