@@ -1,0 +1,713 @@
+fileFormatVersion: 2
+guid: c5c68d15459ec18418cb86ac28768b78
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8839680931150206440
+    second: YRAF Logo_0
+  - first:
+      213: -8376383270858914079
+    second: YRAF Logo_1
+  - first:
+      213: -1997211501632766813
+    second: YRAF Logo_2
+  - first:
+      213: 2016509165811585908
+    second: YRAF Logo_3
+  - first:
+      213: 3634307506097014557
+    second: YRAF Logo_4
+  - first:
+      213: 652541967843713151
+    second: YRAF Logo_5
+  - first:
+      213: -4583162951296790282
+    second: YRAF Logo_6
+  - first:
+      213: -1408078927677815821
+    second: YRAF Logo_7
+  - first:
+      213: 7925069904140350420
+    second: YRAF Logo_8
+  - first:
+      213: -3732600326545947652
+    second: YRAF Logo_9
+  - first:
+      213: 3331420773664385672
+    second: YRAF Logo_10
+  - first:
+      213: -1187508155122997176
+    second: YRAF Logo_11
+  - first:
+      213: 4757150415893442619
+    second: YRAF Logo_12
+  - first:
+      213: 1742980933357210349
+    second: YRAF Logo_13
+  - first:
+      213: -4274791084658649704
+    second: YRAF Logo_14
+  - first:
+      213: -6632611910340839185
+    second: YRAF Logo_15
+  - first:
+      213: 7483159353854275707
+    second: YRAF Logo_16
+  - first:
+      213: -8126128331575063160
+    second: YRAF Logo_17
+  - first:
+      213: -2979263518087163046
+    second: YRAF Logo_18
+  - first:
+      213: -7655651356586530764
+    second: YRAF Logo_19
+  - first:
+      213: 7365308308215307842
+    second: YRAF Logo_20
+  - first:
+      213: -7415801636554768061
+    second: YRAF Logo_21
+  - first:
+      213: -485316214769908718
+    second: YRAF Logo_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: YRAF Logo_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 468
+        width: 110
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81a6ffa1705235580800000000000000
+      internalID: -8839680931150206440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YRAF Logo_1
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 481
+        width: 72
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e60eed8bcb11cb80800000000000000
+      internalID: -8376383270858914079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YRAF Logo_2
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 466
+        width: 69
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3acbadf88ba7844e0800000000000000
+      internalID: -1997211501632766813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YRAF Logo_3
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 490
+        width: 65
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 473d48207641cfb10800000000000000
+      internalID: 2016509165811585908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YRAF Logo_4
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 491
+        width: 75
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d17c271eb67af6230800000000000000
+      internalID: 3634307506097014557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YRAF Logo_5
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 483
+        width: 92
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f70eb52667b4e0900800000000000000
+      internalID: 652541967843713151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YRAF Logo_6
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 508
+        width: 20
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f0593414955560c0800000000000000
+      internalID: -4583162951296790282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YRAF Logo_7
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 505
+        width: 129
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f30d04fcaf757ce0800000000000000
+      internalID: -1408078927677815821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YRAF Logo_8
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 513
+        width: 70
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d3bc68c6118bfd60800000000000000
+      internalID: 7925069904140350420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YRAF Logo_9
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 520
+        width: 59
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf3c8b777c3233cc0800000000000000
+      internalID: -3732600326545947652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YRAF Logo_10
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 519
+        width: 39
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a6f930b859b3e20800000000000000
+      internalID: 3331420773664385672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YRAF Logo_11
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 517
+        width: 70
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 848a306ef9f158fe0800000000000000
+      internalID: -1187508155122997176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YRAF Logo_12
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 514
+        width: 81
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b303e6a491bc40240800000000000000
+      internalID: 4757150415893442619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YRAF Logo_13
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 384
+        width: 62
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea09079cef403810800000000000000
+      internalID: 1742980933357210349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YRAF Logo_14
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 373
+        width: 54
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8951ae54824eca4c0800000000000000
+      internalID: -4274791084658649704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YRAF Logo_15
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 369
+        width: 75
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe8fb1fcb9a34f3a0800000000000000
+      internalID: -6632611910340839185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YRAF Logo_16
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 378
+        width: 70
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b70302ce8c589d760800000000000000
+      internalID: 7483159353854275707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YRAF Logo_17
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 381
+        width: 71
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88d0b3526513a3f80800000000000000
+      internalID: -8126128331575063160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YRAF Logo_18
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 390
+        width: 186
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5352287d9787a6d0800000000000000
+      internalID: -2979263518087163046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YRAF Logo_19
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 400
+        width: 19
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4382c6e07a9a1c590800000000000000
+      internalID: -7655651356586530764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YRAF Logo_20
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 404
+        width: 59
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e186c12e4d63660800000000000000
+      internalID: 7365308308215307842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YRAF Logo_21
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 404
+        width: 53
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3418460c3b7c51990800000000000000
+      internalID: -7415801636554768061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YRAF Logo_22
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 400
+        width: 77
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21407e6597fc349f0800000000000000
+      internalID: -485316214769908718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      YRAF Logo_0: -8839680931150206440
+      YRAF Logo_1: -8376383270858914079
+      YRAF Logo_10: 3331420773664385672
+      YRAF Logo_11: -1187508155122997176
+      YRAF Logo_12: 4757150415893442619
+      YRAF Logo_13: 1742980933357210349
+      YRAF Logo_14: -4274791084658649704
+      YRAF Logo_15: -6632611910340839185
+      YRAF Logo_16: 7483159353854275707
+      YRAF Logo_17: -8126128331575063160
+      YRAF Logo_18: -2979263518087163046
+      YRAF Logo_19: -7655651356586530764
+      YRAF Logo_2: -1997211501632766813
+      YRAF Logo_20: 7365308308215307842
+      YRAF Logo_21: -7415801636554768061
+      YRAF Logo_22: -485316214769908718
+      YRAF Logo_3: 2016509165811585908
+      YRAF Logo_4: 3634307506097014557
+      YRAF Logo_5: 652541967843713151
+      YRAF Logo_6: -4583162951296790282
+      YRAF Logo_7: -1408078927677815821
+      YRAF Logo_8: 7925069904140350420
+      YRAF Logo_9: -3732600326545947652
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
