@@ -5,6 +5,7 @@ public class PlaceSO : ScriptableObject
 {
     public string placeName;
     public string description;
+    public string url;
     public Sprite icon;
     public Vector2 position;
 }

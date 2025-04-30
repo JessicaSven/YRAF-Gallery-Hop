@@ -12,9 +12,18 @@ public class QRScanner : MonoBehaviour
     private bool cameraStarted = false;
     private bool permissionDenied = false;
 
-    void Start()
+    void OnEnable()
     {
         StartCoroutine(StartCameraWhenReady());
+    }
+
+    void OnDisable()
+    {
+        if (camTexture != null)
+        {
+            camTexture.Stop();
+            cameraStarted = false;
+        }
     }
 
     private IEnumerator StartCameraWhenReady()
@@ -89,7 +98,11 @@ public class QRScanner : MonoBehaviour
                     scannedText = result.Text;
                     Debug.Log("Scanned QR Code: " + scannedText);
 
-                    camTexture.Stop(); // Optional
+                    // Send the scanned URL to SessionManager
+                    if (SessionManager.Instance != null)
+                    {
+                        SessionManager.Instance.HandleScannedURL(scannedText);
+                    }
                 }
             }
             catch { }

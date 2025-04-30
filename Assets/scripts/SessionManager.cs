@@ -1,9 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using System;
 
 public class SessionManager : MonoBehaviour
 {
+    public static SessionManager Instance { get; private set; }
     public PlaceSO[] places;
     public InteractablePlace interactablePlacePrefab;
     public List<InteractablePlace> interactablePlaces;
@@ -13,6 +15,24 @@ public class SessionManager : MonoBehaviour
     public Transform interactableItemsParent;
 
     public UnityEvent<float> onProgressChanged = new UnityEvent<float>();
+
+    public GameObject qrScannerObject;
+
+    // Event to broadcast the scanned URL
+    public event Action<string> OnQRCodeScanned;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private void Start() {
         foreach (var item in places) {
@@ -38,5 +58,41 @@ public class SessionManager : MonoBehaviour
         // Calculate progress and invoke event
         float progress = (float)visitedPlaces.Count / places.Length;
         onProgressChanged.Invoke(progress);
+    }
+
+    public void EnableQRScanner()
+    {
+        if (qrScannerObject != null)
+        {
+            qrScannerObject.SetActive(true);
+        }
+    }
+
+    public void DisableQRScanner()
+    {
+        if (qrScannerObject != null)
+        {
+            qrScannerObject.SetActive(false);
+        }
+    }
+
+    public void HandleScannedURL(string url)
+    {
+        // Look for a matching place with this URL
+        foreach (var place in places)
+        {
+            if (place.url == url)
+            {
+                // Mark the place as visited using the VisitedPlacesManager
+                if (VisitedPlacesManager.instance != null)
+                {
+                    VisitedPlacesManager.instance.MarkPlaceAsVisited(place.placeName);
+                }
+                break;
+            }
+        }
+        
+        // Disable the scanner after scan
+        DisableQRScanner();
     }
 }

@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placeName: test 1
   description: this is my outpu
+  url: https://kiac.ca/odd-gallery/current-exhibition/
   icon: {fileID: 21300000, guid: 6f80964a595669749989d87e0c69d7b2, type: 3}
   position: {x: 0, y: 0}
