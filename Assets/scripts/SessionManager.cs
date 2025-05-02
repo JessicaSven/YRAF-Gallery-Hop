@@ -95,4 +95,18 @@ public class SessionManager : MonoBehaviour
         // Disable the scanner after scan
         DisableQRScanner();
     }
+
+    public void IntroRaven()
+    {
+        // Check if the raven is already talking
+        if (TalkingRaven._instance != null)
+        {   
+            List<string> RavenLines = new List<string>() {
+                "Caw! Hello there!",
+                "Click or press space to continue...",
+                "This is the last line!"
+            };
+            TalkingRaven._instance.StartTalking(RavenLines);
+        }
+    }
 }
