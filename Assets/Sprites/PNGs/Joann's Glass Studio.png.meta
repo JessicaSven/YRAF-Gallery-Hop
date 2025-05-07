@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6f280896663fbbd48bfbebc98e97551b
+guid: 68a699b62289c5f4b9c9caf793d7cdb9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3655836141818143523
-    second: Black Morel Mushroom_0
+      213: -8799565619784837751
+    second: Joann's Glass Studio_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Black Morel Mushroom_0
+      name: Joann's Glass Studio_0
       rect:
         serializedVersion: 2
-        x: 97
-        y: 0
-        width: 739
-        height: 1000
+        x: 0
+        y: 14
+        width: 1000
+        height: 970
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 323ea1ef9932cb230800000000000000
-      internalID: 3655836141818143523
+      spriteID: 9851cfed0b9a1e580800000000000000
+      internalID: -8799565619784837751
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -133,7 +133,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Black Morel Mushroom_0: 3655836141818143523
+      Joann's Glass Studio_0: -8799565619784837751
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

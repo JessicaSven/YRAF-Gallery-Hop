@@ -1,79 +1,79 @@
 fileFormatVersion: 2
-guid: 0ddab5a846277b74396ea1c6b9312566
+guid: fafcc800d3af919428689a8ac14e3ef9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7638575524592751235
-    second: YRAF_newlogo_2024-01-1024x307_0
+      213: 5867400376813769335
+    second: YRAF_newlogo_0
   - first:
-      213: -5448393932548739085
-    second: YRAF_newlogo_2024-01-1024x307_1
+      213: -3116936174982212904
+    second: YRAF_newlogo_1
   - first:
-      213: 5616164728865006344
-    second: YRAF_newlogo_2024-01-1024x307_2
+      213: -3400709823824798485
+    second: YRAF_newlogo_2
   - first:
-      213: -5484926133234025985
-    second: YRAF_newlogo_2024-01-1024x307_3
+      213: 6768386381111207771
+    second: YRAF_newlogo_3
   - first:
-      213: -8532960828188285150
-    second: YRAF_newlogo_2024-01-1024x307_4
+      213: -6545186604038450770
+    second: YRAF_newlogo_4
   - first:
-      213: -6673526964476506305
-    second: YRAF_newlogo_2024-01-1024x307_5
+      213: -5835327731955141140
+    second: YRAF_newlogo_5
   - first:
-      213: -886507945950457286
-    second: YRAF_newlogo_2024-01-1024x307_6
+      213: -853210373631394123
+    second: YRAF_newlogo_6
   - first:
-      213: 1757249806540973291
-    second: YRAF_newlogo_2024-01-1024x307_7
+      213: 7630746180931511368
+    second: YRAF_newlogo_7
   - first:
-      213: -5239730619990948413
-    second: YRAF_newlogo_2024-01-1024x307_8
+      213: -4554146707160711720
+    second: YRAF_newlogo_8
   - first:
-      213: -5544901839983117081
-    second: YRAF_newlogo_2024-01-1024x307_9
+      213: -5668090190293320500
+    second: YRAF_newlogo_9
   - first:
-      213: -6633545229925057894
-    second: YRAF_newlogo_2024-01-1024x307_10
+      213: -3718646345324233755
+    second: YRAF_newlogo_10
   - first:
-      213: 8560522310121626219
-    second: YRAF_newlogo_2024-01-1024x307_11
+      213: -1889503099553256518
+    second: YRAF_newlogo_11
   - first:
-      213: 5867747798603094770
-    second: YRAF_newlogo_2024-01-1024x307_12
+      213: -5552057291234197641
+    second: YRAF_newlogo_12
   - first:
-      213: 7160238057632830609
-    second: YRAF_newlogo_2024-01-1024x307_13
+      213: -3791348167464634450
+    second: YRAF_newlogo_13
   - first:
-      213: -2252324225182617510
-    second: YRAF_newlogo_2024-01-1024x307_14
+      213: -4392640246833855313
+    second: YRAF_newlogo_14
   - first:
-      213: -9141327069272068451
-    second: YRAF_newlogo_2024-01-1024x307_15
+      213: -1640706014748320152
+    second: YRAF_newlogo_15
   - first:
-      213: -7302848701577935863
-    second: YRAF_newlogo_2024-01-1024x307_16
+      213: 3901905651030148548
+    second: YRAF_newlogo_16
   - first:
-      213: 2345184009487021843
-    second: YRAF_newlogo_2024-01-1024x307_17
+      213: 2916794506424685812
+    second: YRAF_newlogo_17
   - first:
-      213: -1306880637649793340
-    second: YRAF_newlogo_2024-01-1024x307_18
+      213: 2032053757263736895
+    second: YRAF_newlogo_18
   - first:
-      213: -5486158688368950912
-    second: YRAF_newlogo_2024-01-1024x307_19
+      213: -8353674284465724442
+    second: YRAF_newlogo_19
   - first:
-      213: -4360885532842359295
-    second: YRAF_newlogo_2024-01-1024x307_20
+      213: -2169756855585144829
+    second: YRAF_newlogo_20
   - first:
-      213: -416023418869500918
-    second: YRAF_newlogo_2024-01-1024x307_21
+      213: -3347471555350516460
+    second: YRAF_newlogo_21
   - first:
-      213: 4563351681511643999
-    second: YRAF_newlogo_2024-01-1024x307_22
+      213: 2834928536779062712
+    second: YRAF_newlogo_22
   - first:
-      213: 6277958000031274399
-    second: YRAF_newlogo_2024-01-1024x307_23
+      213: -8982659873513038998
+    second: YRAF_newlogo_23
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,7 +115,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -169,7 +169,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_0
+      name: YRAF_newlogo_0
       rect:
         serializedVersion: 2
         x: 5
@@ -184,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 382185df7fba10a60800000000000000
-      internalID: 7638575524592751235
+      spriteID: 7725afe4e813d6150800000000000000
+      internalID: 5867400376813769335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_1
+      name: YRAF_newlogo_1
       rect:
         serializedVersion: 2
         x: 99
@@ -206,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ffe90ec59a6364b0800000000000000
-      internalID: -5448393932548739085
+      spriteID: 8d2de96201b6eb4d0800000000000000
+      internalID: -3116936174982212904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_2
+      name: YRAF_newlogo_2
       rect:
         serializedVersion: 2
         x: 184
@@ -228,14 +228,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 803a310b010a0fd40800000000000000
-      internalID: 5616164728865006344
+      spriteID: becddb6de604ec0d0800000000000000
+      internalID: -3400709823824798485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_3
+      name: YRAF_newlogo_3
       rect:
         serializedVersion: 2
         x: 248
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ff934510eb0a1e3b0800000000000000
-      internalID: -5484926133234025985
+      spriteID: b57a9bc9d832eed50800000000000000
+      internalID: 6768386381111207771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_4
+      name: YRAF_newlogo_4
       rect:
         serializedVersion: 2
         x: 315
@@ -272,14 +272,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 227a3891655d49980800000000000000
-      internalID: -8532960828188285150
+      spriteID: ea194a52673da25a0800000000000000
+      internalID: -6545186604038450770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_5
+      name: YRAF_newlogo_5
       rect:
         serializedVersion: 2
         x: 414
@@ -294,14 +294,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f3f036b659ed263a0800000000000000
-      internalID: -6673526964476506305
+      spriteID: ce5f3dc3850c40fa0800000000000000
+      internalID: -5835327731955141140
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_6
+      name: YRAF_newlogo_6
       rect:
         serializedVersion: 2
         x: 516
@@ -316,14 +316,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a32df0758bd72b3f0800000000000000
-      internalID: -886507945950457286
+      spriteID: 5beb5098fa9c824f0800000000000000
+      internalID: -853210373631394123
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_7
+      name: YRAF_newlogo_7
       rect:
         serializedVersion: 2
         x: 541
@@ -338,14 +338,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be4af748361036810800000000000000
-      internalID: 1757249806540973291
+      spriteID: 844679dd83bd5e960800000000000000
+      internalID: 7630746180931511368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_8
+      name: YRAF_newlogo_8
       rect:
         serializedVersion: 2
         x: 676
@@ -360,14 +360,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3c5c3bc23ccb847b0800000000000000
-      internalID: -5239730619990948413
+      spriteID: 8ddbba0e2bb6cc0c0800000000000000
+      internalID: -4554146707160711720
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_9
+      name: YRAF_newlogo_9
       rect:
         serializedVersion: 2
         x: 751
@@ -382,14 +382,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7ec7569972d8c03b0800000000000000
-      internalID: -5544901839983117081
+      spriteID: cccb0b4b006e651b0800000000000000
+      internalID: -5668090190293320500
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_10
+      name: YRAF_newlogo_10
       rect:
         serializedVersion: 2
         x: 814
@@ -404,14 +404,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a9a74d862c9e0f3a0800000000000000
-      internalID: -6633545229925057894
+      spriteID: 5ebf4a5e9d6b46cc0800000000000000
+      internalID: -3718646345324233755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_11
+      name: YRAF_newlogo_11
       rect:
         serializedVersion: 2
         x: 853
@@ -426,14 +426,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b6a1b9a7fa51dc670800000000000000
-      internalID: 8560522310121626219
+      spriteID: abbe02521f227c5e0800000000000000
+      internalID: -1889503099553256518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_12
+      name: YRAF_newlogo_12
       rect:
         serializedVersion: 2
         x: 926
@@ -448,14 +448,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2fa515fb88d6e6150800000000000000
-      internalID: 5867747798603094770
+      spriteID: 77f3e574f4123f2b0800000000000000
+      internalID: -5552057291234197641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_13
+      name: YRAF_newlogo_13
       rect:
         serializedVersion: 2
         x: 168
@@ -470,14 +470,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 194107ca3964e5360800000000000000
-      internalID: 7160238057632830609
+      spriteID: ea7317addec626bc0800000000000000
+      internalID: -3791348167464634450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_14
+      name: YRAF_newlogo_14
       rect:
         serializedVersion: 2
         x: 237
@@ -492,14 +492,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a50bbfeec032eb0e0800000000000000
-      internalID: -2252324225182617510
+      spriteID: fa4426df7f43a03c0800000000000000
+      internalID: -4392640246833855313
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_15
+      name: YRAF_newlogo_15
       rect:
         serializedVersion: 2
         x: 289
@@ -514,14 +514,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d9e206c967b732180800000000000000
-      internalID: -9141327069272068451
+      spriteID: 86e541a829a0b39e0800000000000000
+      internalID: -1640706014748320152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_16
+      name: YRAF_newlogo_16
       rect:
         serializedVersion: 2
         x: 347
@@ -536,14 +536,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 904460e4cc117aa90800000000000000
-      internalID: -7302848701577935863
+      spriteID: 4c5cdb4348a562630800000000000000
+      internalID: 3901905651030148548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_17
+      name: YRAF_newlogo_17
       rect:
         serializedVersion: 2
         x: 463
@@ -558,14 +558,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 317766a6e64cb8020800000000000000
-      internalID: 2345184009487021843
+      spriteID: 4f4114656298a7820800000000000000
+      internalID: 2916794506424685812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_18
+      name: YRAF_newlogo_18
       rect:
         serializedVersion: 2
         x: 535
@@ -580,14 +580,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ce4c05fbf60ddde0800000000000000
-      internalID: -1306880637649793340
+      spriteID: f30f33e302e433c10800000000000000
+      internalID: 2032053757263736895
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_19
+      name: YRAF_newlogo_19
       rect:
         serializedVersion: 2
         x: 599
@@ -602,14 +602,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08188566dbf3dd3b0800000000000000
-      internalID: -5486158688368950912
+      spriteID: 6e3ea197f79c11c80800000000000000
+      internalID: -8353674284465724442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_20
+      name: YRAF_newlogo_20
       rect:
         serializedVersion: 2
         x: 718
@@ -624,14 +624,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1068acc76b50b73c0800000000000000
-      internalID: -4360885532842359295
+      spriteID: 30001edb2a973e1e0800000000000000
+      internalID: -2169756855585144829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_21
+      name: YRAF_newlogo_21
       rect:
         serializedVersion: 2
         x: 743
@@ -646,14 +646,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a043a0c97ecf93af0800000000000000
-      internalID: -416023418869500918
+      spriteID: 41dab972b546b81d0800000000000000
+      internalID: -3347471555350516460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_22
+      name: YRAF_newlogo_22
       rect:
         serializedVersion: 2
         x: 792
@@ -668,14 +668,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f5bdea93d28445f30800000000000000
-      internalID: 4563351681511643999
+      spriteID: 8bd755eeb70b75720800000000000000
+      internalID: 2834928536779062712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YRAF_newlogo_2024-01-1024x307_23
+      name: YRAF_newlogo_23
       rect:
         serializedVersion: 2
         x: 855
@@ -690,8 +690,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f959faaf989cf1750800000000000000
-      internalID: 6277958000031274399
+      spriteID: a6b991def6e275380800000000000000
+      internalID: -8982659873513038998
       vertices: []
       indices: 
       edges: []
@@ -700,7 +700,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -708,30 +708,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      YRAF_newlogo_2024-01-1024x307_0: 7638575524592751235
-      YRAF_newlogo_2024-01-1024x307_1: -5448393932548739085
-      YRAF_newlogo_2024-01-1024x307_10: -6633545229925057894
-      YRAF_newlogo_2024-01-1024x307_11: 8560522310121626219
-      YRAF_newlogo_2024-01-1024x307_12: 5867747798603094770
-      YRAF_newlogo_2024-01-1024x307_13: 7160238057632830609
-      YRAF_newlogo_2024-01-1024x307_14: -2252324225182617510
-      YRAF_newlogo_2024-01-1024x307_15: -9141327069272068451
-      YRAF_newlogo_2024-01-1024x307_16: -7302848701577935863
-      YRAF_newlogo_2024-01-1024x307_17: 2345184009487021843
-      YRAF_newlogo_2024-01-1024x307_18: -1306880637649793340
-      YRAF_newlogo_2024-01-1024x307_19: -5486158688368950912
-      YRAF_newlogo_2024-01-1024x307_2: 5616164728865006344
-      YRAF_newlogo_2024-01-1024x307_20: -4360885532842359295
-      YRAF_newlogo_2024-01-1024x307_21: -416023418869500918
-      YRAF_newlogo_2024-01-1024x307_22: 4563351681511643999
-      YRAF_newlogo_2024-01-1024x307_23: 6277958000031274399
-      YRAF_newlogo_2024-01-1024x307_3: -5484926133234025985
-      YRAF_newlogo_2024-01-1024x307_4: -8532960828188285150
-      YRAF_newlogo_2024-01-1024x307_5: -6673526964476506305
-      YRAF_newlogo_2024-01-1024x307_6: -886507945950457286
-      YRAF_newlogo_2024-01-1024x307_7: 1757249806540973291
-      YRAF_newlogo_2024-01-1024x307_8: -5239730619990948413
-      YRAF_newlogo_2024-01-1024x307_9: -5544901839983117081
+      YRAF_newlogo_0: 5867400376813769335
+      YRAF_newlogo_1: -3116936174982212904
+      YRAF_newlogo_10: -3718646345324233755
+      YRAF_newlogo_11: -1889503099553256518
+      YRAF_newlogo_12: -5552057291234197641
+      YRAF_newlogo_13: -3791348167464634450
+      YRAF_newlogo_14: -4392640246833855313
+      YRAF_newlogo_15: -1640706014748320152
+      YRAF_newlogo_16: 3901905651030148548
+      YRAF_newlogo_17: 2916794506424685812
+      YRAF_newlogo_18: 2032053757263736895
+      YRAF_newlogo_19: -8353674284465724442
+      YRAF_newlogo_2: -3400709823824798485
+      YRAF_newlogo_20: -2169756855585144829
+      YRAF_newlogo_21: -3347471555350516460
+      YRAF_newlogo_22: 2834928536779062712
+      YRAF_newlogo_23: -8982659873513038998
+      YRAF_newlogo_3: 6768386381111207771
+      YRAF_newlogo_4: -6545186604038450770
+      YRAF_newlogo_5: -5835327731955141140
+      YRAF_newlogo_6: -853210373631394123
+      YRAF_newlogo_7: 7630746180931511368
+      YRAF_newlogo_8: -4554146707160711720
+      YRAF_newlogo_9: -5668090190293320500
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

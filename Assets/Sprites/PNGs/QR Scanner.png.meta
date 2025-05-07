@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: b691f5439f558414cbcfae4f92faba5c
+guid: 13e90dc7645d38d44884331642832c86
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8319604857822907328
-    second: QR Code Scanner_0
+      213: 669165700029331498
+    second: QR Scanner_0
   - first:
-      213: 4798900709093818355
-    second: QR Code Scanner_1
+      213: -3327538640961267882
+    second: QR Scanner_1
   - first:
-      213: -2402621486034904823
-    second: QR Code Scanner_2
+      213: -1950625026718598259
+    second: QR Scanner_2
   - first:
-      213: -2437259394758824175
-    second: QR Code Scanner_3
+      213: 3425513319453884997
+    second: QR Scanner_3
   - first:
-      213: 4067211929382889629
-    second: QR Code Scanner_4
+      213: -7331882425782349711
+    second: QR Scanner_4
   - first:
-      213: -6228813194401921692
-    second: QR Code Scanner_5
+      213: 8151007499681171473
+    second: QR Scanner_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +61,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: QR Code Scanner_0
+      name: QR Scanner_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 680
-        width: 332
-        height: 314
+        x: 13
+        y: 683
+        width: 331
+        height: 311
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0cb062ef98c257370800000000000000
-      internalID: 8319604857822907328
+      spriteID: a28bf16a8aa594900800000000000000
+      internalID: 669165700029331498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: QR Code Scanner_1
+      name: QR Scanner_1
       rect:
         serializedVersion: 2
-        x: 125
-        y: 258
-        width: 381
-        height: 443
+        x: 124
+        y: 261
+        width: 378
+        height: 439
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ff38ede4ce199240800000000000000
-      internalID: 4798900709093818355
+      spriteID: 6571e117c3532d1d0800000000000000
+      internalID: -3327538640961267882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: QR Code Scanner_2
+      name: QR Scanner_2
       rect:
         serializedVersion: 2
         x: 553
-        y: 291
-        width: 314
-        height: 400
+        y: 294
+        width: 312
+        height: 398
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9091b23fc7c28aed0800000000000000
-      internalID: -2402621486034904823
+      spriteID: d8b73708fdcfde4e0800000000000000
+      internalID: -1950625026718598259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: QR Code Scanner_3
+      name: QR Scanner_3
       rect:
         serializedVersion: 2
-        x: 727
-        y: 687
-        width: 263
-        height: 313
+        x: 726
+        y: 691
+        width: 261
+        height: 309
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 11faaed5e7d1d2ed0800000000000000
-      internalID: -2437259394758824175
+      spriteID: 5420b63073ed98f20800000000000000
+      internalID: 3425513319453884997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: QR Code Scanner_4
+      name: QR Scanner_4
       rect:
         serializedVersion: 2
-        x: 12
+        x: 11
         y: 0
-        width: 306
-        height: 326
+        width: 304
+        height: 327
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d98291563b3a17830800000000000000
-      internalID: 4067211929382889629
+      spriteID: 170505c97cbef3a90800000000000000
+      internalID: -7331882425782349711
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: QR Code Scanner_5
+      name: QR Scanner_5
       rect:
         serializedVersion: 2
-        x: 697
+        x: 698
         y: 0
-        width: 295
-        height: 312
+        width: 291
+        height: 311
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 465486fb66fce89a0800000000000000
-      internalID: -6228813194401921692
+      spriteID: 1188a0492223e1170800000000000000
+      internalID: 8151007499681171473
       vertices: []
       indices: 
       edges: []
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -258,12 +258,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      QR Code Scanner_0: 8319604857822907328
-      QR Code Scanner_1: 4798900709093818355
-      QR Code Scanner_2: -2402621486034904823
-      QR Code Scanner_3: -2437259394758824175
-      QR Code Scanner_4: 4067211929382889629
-      QR Code Scanner_5: -6228813194401921692
+      QR Scanner_0: 669165700029331498
+      QR Scanner_1: -3327538640961267882
+      QR Scanner_2: -1950625026718598259
+      QR Scanner_3: 3425513319453884997
+      QR Scanner_4: -7331882425782349711
+      QR Scanner_5: 8151007499681171473
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
