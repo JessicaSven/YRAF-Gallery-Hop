@@ -308,7 +308,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Lowe's Mortuary_0: 8560773420049083958
+      Lowe's Mortuary_1: 3033973325769271159
+      Lowe's Mortuary_2: 6710268969570800839
+      Lowe's Mortuary_3: 8983116156192386172
+      Lowe's Mortuary_4: 2015264080703296898
+      Lowe's Mortuary_5: -3865855459321333465
+      Lowe's Mortuary_6: -26605785065911627
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

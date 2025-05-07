@@ -158,7 +158,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Speech Bubble 3_0: -266322240660303365
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

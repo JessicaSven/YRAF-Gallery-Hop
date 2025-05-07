@@ -283,7 +283,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      QR Scanner_0: 669165700029331498
+      QR Scanner_1: -3327538640961267882
+      QR Scanner_2: -1950625026718598259
+      QR Scanner_3: 3425513319453884997
+      QR Scanner_4: -7331882425782349711
+      QR Scanner_5: 8151007499681171473
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -158,7 +158,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ruby's Place_0: -3103549794962549916
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

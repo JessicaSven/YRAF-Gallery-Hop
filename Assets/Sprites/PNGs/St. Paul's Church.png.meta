@@ -158,7 +158,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      St. Paul's Church_0: 2134585490727990134
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

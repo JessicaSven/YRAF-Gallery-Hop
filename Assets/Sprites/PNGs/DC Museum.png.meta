@@ -158,7 +158,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DC Museum_0: -8204180252305242446
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

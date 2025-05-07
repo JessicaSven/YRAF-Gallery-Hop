@@ -158,7 +158,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      QR_kiac.ca_ODD_Gallery_0: 7009261174854110825
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

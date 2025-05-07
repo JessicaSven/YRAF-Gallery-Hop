@@ -158,7 +158,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KTM Building_0: -4436858319727254369
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
