@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edeb923af9f57cd48a78b2104c643aac, type: 3}
+  m_Name: ODD Gallery
+  m_EditorClassIdentifier: 
+  PlaceName: ODD Gallery
+  Icon: {fileID: 21300000, guid: 6de92cfe51991c64c90c5eb7f58993cc, type: 3}
+  Color: {r: 0.31764707, g: 0.6392157, b: 0.6392157, a: 0}
+  Content: The Northern Fibres Guild is a volunteer-driven organiation that fosters
+    fibre arts across the Yukon. From spinning and dyeing to weaving,, felting, and
+    beading, members explore a wide range of techniques while sharing knowledge and
+    creative inspiration. "Fibres of the Land" features the "Climate Stripes Tapestry,"
+    a collaborative piece woven during the 2024 Jenni House Residency that visualizes
+    climate change in the Yukon through colour and texture. Additional works showcase
+    the diversity and talent within the guild today. We hope this exhibition sparks
+    our curiosity about fibre arts and the creative community behind them.
+  RavenSucessScript: You found ODD Gallery! Strange tastes, sharp eyes. Caw!
+  RavenHintScript: "\u201CStamp not showing? Double-check you scanned the right shiny
+    square!\u201D"
+  Url: 
+  Position: {x: 0, y: 0}

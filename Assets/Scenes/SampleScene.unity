@@ -1232,8 +1232,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   places:
-  - {fileID: 11400000, guid: 0936dd540df301945b36760e824c18c3, type: 2}
-  - {fileID: 11400000, guid: 348b3b842755dd548b5cc769b4b45d74, type: 2}
+  - {fileID: 11400000, guid: 0e3e157609007d848ad9e7734313588e, type: 2}
+  - {fileID: 11400000, guid: c9d19f7a74c70774fb1f205be7784870, type: 2}
+  - {fileID: 11400000, guid: 8f1a0a73b171b92489bc6ec0211dafe5, type: 2}
+  - {fileID: 11400000, guid: f8234651221f9604597570eaa3cf09e9, type: 2}
+  - {fileID: 11400000, guid: 2652bfff363c04244afbd17029406e93, type: 2}
+  - {fileID: 11400000, guid: 06d7791ddb49dca4482ab316825c4cdf, type: 2}
   interactablePlacePrefab: {fileID: 5511060370063567793, guid: 8c173a17b4e192e4f9d98dbe0b0127b8, type: 3}
   interactablePlaces: []
   finishedPlaces: {fileID: 283452084}
