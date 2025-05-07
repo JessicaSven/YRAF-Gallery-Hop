@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeb923af9f57cd48a78b2104c643aac, type: 3}
   m_Name: NewPlace
   m_EditorClassIdentifier: 
-  placeName: test 1
-  description: this is my outpu
-  url: https://kiac.ca/odd-gallery/current-exhibition/
-  icon: {fileID: 21300000, guid: 6f80964a595669749989d87e0c69d7b2, type: 3}
-  position: {x: 0, y: 0}
+  PlaceName: place 1
+  Icon: {fileID: 21300000, guid: f835328497816ee4c9eb676ace5e47fa, type: 3}
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Content: content 1
+  RavenSucessScript: 
+  RavenHintScript: 
+  Url: 
+  Position: {x: 0, y: 0}

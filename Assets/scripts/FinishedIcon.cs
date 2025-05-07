@@ -12,7 +12,7 @@ public class FinishedIcon : MonoBehaviour
     public void initalize(PlaceSO temp)
     {
         place = temp;
-        image.sprite = temp.icon;
+        image.sprite = temp.Icon;
     }
 
     public void UpdateVisibility(bool hasBeenVisited)
@@ -24,6 +24,6 @@ public class FinishedIcon : MonoBehaviour
 
     public void OnClick()
     {
-        VisitedPlacesManager.instance.MarkPlaceAsVisited(place.placeName);
+        VisitedPlacesManager.instance.MarkPlaceAsVisited(place.PlaceName);
     }
 }

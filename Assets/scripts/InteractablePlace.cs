@@ -10,8 +10,8 @@ public class InteractablePlace : MonoBehaviour
     internal void initialize(PlaceSO item)
     {
         place = item;
-        image.sprite = item.icon;
-        UpdateVisibility(VisitedPlacesManager.instance.HasVisitedPlace(item.placeName));
+        image.sprite = item.Icon;
+        UpdateVisibility(VisitedPlacesManager.instance.HasVisitedPlace(item.PlaceName));
         if (visitedIndicator != null)
         {
             visitedIndicator.SetActive(false);

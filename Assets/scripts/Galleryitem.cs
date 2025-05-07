@@ -9,7 +9,7 @@ public class GalleryItem : MonoBehaviour
 
     public void Initialize(PlaceSO place)
     {
-        iconImage.sprite = place.icon;
-        titleText.text = place.placeName;
+        iconImage.sprite = place.Icon;
+        titleText.text = place.PlaceName;
     }
 }

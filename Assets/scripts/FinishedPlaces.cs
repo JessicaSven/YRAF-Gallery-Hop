@@ -14,12 +14,12 @@ public class FinishedPlaces : MonoBehaviour
         places.Add(temp);
         FinishedIcon icon = Instantiate(iconPrefab, placement.position, Quaternion.identity, placement);
         icon.initalize(temp);
-        placeIcons[temp.placeName] = icon;
+        placeIcons[temp.PlaceName] = icon;
         
         // Check if this place has been visited
         if (VisitedPlacesManager.instance != null)
         {
-            icon.UpdateVisibility(VisitedPlacesManager.instance.HasVisitedPlace(temp.placeName));
+            icon.UpdateVisibility(VisitedPlacesManager.instance.HasVisitedPlace(temp.PlaceName));
         }
     }
 

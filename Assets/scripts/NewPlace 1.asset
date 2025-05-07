@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeb923af9f57cd48a78b2104c643aac, type: 3}
   m_Name: NewPlace 1
   m_EditorClassIdentifier: 
-  placeName: test 2
-  description: this is my outpu2
-  icon: {fileID: 21300000, guid: f835328497816ee4c9eb676ace5e47fa, type: 3}
-  position: {x: 50, y: 500}
+  PlaceName: place 2
+  Icon: {fileID: 4349915267927364619, guid: 4d60c01a6d922454ab01eb377d2e4636, type: 3}
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  Content: content2
+  RavenSucessScript: 
+  RavenHintScript: 
+  Url: 
+  Position: {x: 0, y: 0}

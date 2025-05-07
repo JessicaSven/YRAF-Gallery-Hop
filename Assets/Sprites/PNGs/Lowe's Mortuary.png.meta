@@ -1,25 +1,28 @@
 fileFormatVersion: 2
-guid: b691f5439f558414cbcfae4f92faba5c
+guid: 9871de69cf271d44abe9f422ec40b5a2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8319604857822907328
-    second: QR Code Scanner_0
+      213: 8560773420049083958
+    second: Lowe's Mortuary_0
   - first:
-      213: 4798900709093818355
-    second: QR Code Scanner_1
+      213: 3033973325769271159
+    second: Lowe's Mortuary_1
   - first:
-      213: -2402621486034904823
-    second: QR Code Scanner_2
+      213: 6710268969570800839
+    second: Lowe's Mortuary_2
   - first:
-      213: -2437259394758824175
-    second: QR Code Scanner_3
+      213: 8983116156192386172
+    second: Lowe's Mortuary_3
   - first:
-      213: 4067211929382889629
-    second: QR Code Scanner_4
+      213: 2015264080703296898
+    second: Lowe's Mortuary_4
   - first:
-      213: -6228813194401921692
-    second: QR Code Scanner_5
+      213: -3865855459321333465
+    second: Lowe's Mortuary_5
+  - first:
+      213: -26605785065911627
+    second: Lowe's Mortuary_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +64,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -99,7 +102,33 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -115,13 +144,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: QR Code Scanner_0
+      name: Lowe's Mortuary_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 680
-        width: 332
-        height: 314
+        x: 288
+        y: 848
+        width: 82
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0cb062ef98c257370800000000000000
-      internalID: 8319604857822907328
+      spriteID: 63ea1a0911afdc670800000000000000
+      internalID: 8560773420049083958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: QR Code Scanner_1
+      name: Lowe's Mortuary_1
       rect:
         serializedVersion: 2
-        x: 125
-        y: 258
-        width: 381
-        height: 443
+        x: 427
+        y: 875
+        width: 83
+        height: 92
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ff38ede4ce199240800000000000000
-      internalID: 4798900709093818355
+      spriteID: 777ec744aa6da1a20800000000000000
+      internalID: 3033973325769271159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: QR Code Scanner_2
+      name: Lowe's Mortuary_2
       rect:
         serializedVersion: 2
-        x: 553
-        y: 291
-        width: 314
-        height: 400
+        x: 567
+        y: 840
+        width: 111
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9091b23fc7c28aed0800000000000000
-      internalID: -2402621486034904823
+      spriteID: 7c41896431aaf1d50800000000000000
+      internalID: 6710268969570800839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: QR Code Scanner_3
+      name: Lowe's Mortuary_3
       rect:
         serializedVersion: 2
-        x: 727
-        y: 687
-        width: 263
-        height: 313
+        x: 185
+        y: 775
+        width: 82
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +225,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 11faaed5e7d1d2ed0800000000000000
-      internalID: -2437259394758824175
+      spriteID: c7c6be9ac807aac70800000000000000
+      internalID: 8983116156192386172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: QR Code Scanner_4
+      name: Lowe's Mortuary_4
       rect:
         serializedVersion: 2
-        x: 12
-        y: 0
-        width: 306
-        height: 326
+        x: 217
+        y: 3
+        width: 468
+        height: 813
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +247,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d98291563b3a17830800000000000000
-      internalID: 4067211929382889629
+      spriteID: 2859cea0108a7fb10800000000000000
+      internalID: 2015264080703296898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: QR Code Scanner_5
+      name: Lowe's Mortuary_5
       rect:
         serializedVersion: 2
-        x: 697
-        y: 0
-        width: 295
-        height: 312
+        x: 115
+        y: 671
+        width: 77
+        height: 78
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +269,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 465486fb66fce89a0800000000000000
-      internalID: -6228813194401921692
+      spriteID: 729b52221f8b95ac0800000000000000
+      internalID: -3865855459321333465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lowe's Mortuary_6
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 332
+        width: 344
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba0d20fd2a71aff0800000000000000
+      internalID: -26605785065911627
       vertices: []
       indices: 
       edges: []
@@ -250,20 +301,14 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      QR Code Scanner_0: 8319604857822907328
-      QR Code Scanner_1: 4798900709093818355
-      QR Code Scanner_2: -2402621486034904823
-      QR Code Scanner_3: -2437259394758824175
-      QR Code Scanner_4: 4067211929382889629
-      QR Code Scanner_5: -6228813194401921692
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

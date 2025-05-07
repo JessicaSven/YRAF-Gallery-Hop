@@ -10,8 +10,8 @@ public class PlaceDetailsUI : MonoBehaviour
 
     public void UpdatePlace(PlaceSO item)
     {
-        image.sprite = item.icon;
-        placeName.text = item.placeName;
-        description.text = item.description;
+        image.sprite = item.Icon;
+        placeName.text = item.PlaceName;
+        description.text = item.Content;
     }   
 }

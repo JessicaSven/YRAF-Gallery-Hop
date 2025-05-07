@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e92b517f8432f3243b271a7633634527
+guid: dd5aa7ae09ec02a4788337b77b06763e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7157561037332017152
-    second: 19_0
+      213: 6944249488210063546
+    second: Billy Bigg's_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 19_0
+      name: Billy Bigg's_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 14
-        width: 1000
-        height: 970
+        x: 70
+        y: 0
+        width: 861
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 000f95057d3c45360800000000000000
-      internalID: 7157561037332017152
+      spriteID: ab0f2780e1eee5060800000000000000
+      internalID: 6944249488210063546
       vertices: []
       indices: 
       edges: []
@@ -158,8 +158,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      19_0: 7157561037332017152
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

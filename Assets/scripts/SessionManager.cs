@@ -37,7 +37,7 @@ public class SessionManager : MonoBehaviour
     private void Start() {
         foreach (var item in places) {
             InteractablePlace temp = Instantiate(interactablePlacePrefab, interactableItemsParent);
-            temp.transform.localPosition = item.position;
+            temp.transform.localPosition = item.Position;
             temp.initialize(item);
             interactablePlaces.Add(temp);
             finishedPlaces.addPlace(item);
@@ -50,8 +50,8 @@ public class SessionManager : MonoBehaviour
         foreach (var place in interactablePlaces)
         {
             print(visitedPlaces);
-            print(place.place.placeName + " visited: " + visitedPlaces.Contains(place.place.placeName));
-            place.UpdateVisibility(visitedPlaces.Contains(place.place.placeName));
+            print(place.place.PlaceName + " visited: " + visitedPlaces.Contains(place.place.PlaceName));
+            place.UpdateVisibility(visitedPlaces.Contains(place.place.PlaceName));
         }
         finishedPlaces.UpdateVisibility(visitedPlaces);
 
@@ -81,12 +81,12 @@ public class SessionManager : MonoBehaviour
         // Look for a matching place with this URL
         foreach (var place in places)
         {
-            if (place.url == url)
+            if (place.Url == url)
             {
                 // Mark the place as visited using the VisitedPlacesManager
                 if (VisitedPlacesManager.instance != null)
                 {
-                    VisitedPlacesManager.instance.MarkPlaceAsVisited(place.placeName);
+                    VisitedPlacesManager.instance.MarkPlaceAsVisited(place.PlaceName);
                 }
                 break;
             }
