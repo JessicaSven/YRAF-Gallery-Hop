@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlaceName: KIAC Back Porch
   Icon: {fileID: 1853742735524693719, guid: 6728ae74d33b0b342a56273b87a5fd70, type: 3}
-  Color: {r: 0.10196079, g: 0.45882356, b: 0.73333335, a: 0}
+  Color: {r: 0.10196079, g: 0.45882356, b: 0.73333335, a: 1}
   Content: "The KIAC Back Porch becomes a living canvas this year! Join visiting
     Whitehorse artist Gorellaume for a collaborative mural painting\u2014add a splash,
     swirl, or signature to this ever-growing work. It\u2019s art in motion, shared

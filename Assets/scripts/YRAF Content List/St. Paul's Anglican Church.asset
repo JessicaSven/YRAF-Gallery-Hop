@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlaceName: St. Paul's Anglican Church
   Icon: {fileID: 2134585490727990134, guid: df105678ca38ba049810b0a55693de3d, type: 3}
-  Color: {r: 0.95294124, g: 0.86666673, b: 0.019607844, a: 0}
+  Color: {r: 0.95294124, g: 0.86666673, b: 0.019607844, a: 1}
   Content: "Step into a historic sanctuary hosting contemporary voices. St. Paul\u2019s
     features a visual exhibition by Natasha Henderson, paired with literary readings
     by local authors (pending confirmation). This elegant Gothic Revival church becomes

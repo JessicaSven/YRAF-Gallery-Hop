@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlaceName: Dawson Daily News
   Icon: {fileID: -1429739016836665622, guid: bb74813732db80b4d8c3842213e09a6d, type: 3}
-  Color: {r: 0.60784316, g: 0.78039217, b: 0.88235295, a: 0}
+  Color: {r: 0.60784316, g: 0.78039217, b: 0.88235295, a: 1}
   Content: "Once home to one of Dawson\u2019s longest-running newspapers, the Dawson
     Daily News building preserves northern Canada\u2019s journalistic legacy. A historic
     hub for printers and publishers from 1899 to 1954, it now invites visitors to

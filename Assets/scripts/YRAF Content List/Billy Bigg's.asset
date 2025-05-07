@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlaceName: Billy Bigg's
   Icon: {fileID: 6944249488210063546, guid: dd5aa7ae09ec02a4788337b77b06763e, type: 3}
-  Color: {r: 0, g: 0, b: 0, a: 0}
+  Color: {r: 0, g: 0, b: 0, a: 1}
   Content: 
   RavenSucessScript: 
   RavenHintScript: 

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlaceName: Picnic Shelter
   Icon: {fileID: 21300000, guid: d539e65377ebd9147a38dd2300d3e5f7, type: 3}
-  Color: {r: 1, g: 0.92941177, b: 0.7882353, a: 0}
+  Color: {r: 1, g: 0.92941177, b: 0.7882353, a: 1}
   Content: "Visit the Yukon Riverside Artist Market at the Picnic Shelter to browse
     original artwork and live demos from local makers. A vibrant space for creativity
     and conversation, this stop celebrates Yukon artists with goods for sale and

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlaceName: KTM Building
   Icon: {fileID: -4436858319727254369, guid: 78877a9984254614aa5dc627e09bfa6f, type: 3}
-  Color: {r: 0, g: 0, b: 0, a: 0}
+  Color: {r: 0, g: 0, b: 0, a: 1}
   Content: "Once home to the Klondike Thawing Machine Company, the KTM Building is
     a preserved piece of Dawson\u2019s industrial history. With its bold Boomtown
     fa\xE7ade and corrugated metal charm, this historic storefront marks a gateway

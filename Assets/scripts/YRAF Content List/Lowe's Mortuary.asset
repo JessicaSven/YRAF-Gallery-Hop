@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlaceName: Lowe's Mortuary
   Icon: {fileID: 2015264080703296898, guid: 9871de69cf271d44abe9f422ec40b5a2, type: 3}
-  Color: {r: 0, g: 0, b: 0, a: 0}
+  Color: {r: 0, g: 0, b: 0, a: 1}
   Content: "Hauntingly beautiful, Lowe\u2019s Mortuary once served Dawson\u2019s
     dearly departed. Now a quiet heritage site, it invites reflection on the city\u2019s
     storied past. Don\u2019t let the creaky floors fool you\u2014this place is more
