@@ -1,10 +1,25 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Sprites/PNGs/Visitor's entre.png.meta
 guid: c5ef3011986389a4d891791ca48c0446
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 8102475010217275273
     second: Visitor's entre_0
+========
+guid: 6c2265fdddf6a234a873b7098d9c1927
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5660104166885646579
+    second: SoundOff_0
+  - first:
+      213: 5925428809978282176
+    second: SoundOff_1
+  - first:
+      213: -7396004514469405785
+    second: SoundOff_2
+>>>>>>>> origin/Design-Branch:Assets/Sprites/PNGs/SoundOff.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,33 +99,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Win64
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -126,13 +115,17 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<<< HEAD:Assets/Sprites/PNGs/Visitor's entre.png.meta
       name: Visitor's entre_0
+========
+      name: SoundOff_0
+>>>>>>>> origin/Design-Branch:Assets/Sprites/PNGs/SoundOff.png.meta
       rect:
         serializedVersion: 2
-        x: 53
+        x: 62
         y: 0
-        width: 898
-        height: 1000
+        width: 831
+        height: 972
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +134,57 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
+<<<<<<<< HEAD:Assets/Sprites/PNGs/Visitor's entre.png.meta
       spriteID: 98fea71d716c17070800000000000000
       internalID: 8102475010217275273
+========
+      spriteID: 3f06de250cabc8e40800000000000000
+      internalID: 5660104166885646579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoundOff_1
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 410
+        width: 311
+        height: 590
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c00f90cb1a5b3250800000000000000
+      internalID: 5925428809978282176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoundOff_2
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 244
+        width: 164
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab9ddd641d1c5990800000000000000
+      internalID: -7396004514469405785
+>>>>>>>> origin/Design-Branch:Assets/Sprites/PNGs/SoundOff.png.meta
       vertices: []
       indices: 
       edges: []
@@ -158,7 +200,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+<<<<<<<< HEAD:Assets/Sprites/PNGs/Visitor's entre.png.meta
     nameFileIdTable: {}
+========
+    nameFileIdTable:
+      SoundOff_0: 5660104166885646579
+      SoundOff_1: 5925428809978282176
+      SoundOff_2: -7396004514469405785
+>>>>>>>> origin/Design-Branch:Assets/Sprites/PNGs/SoundOff.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,25 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Sprites/PNGs/Joann's Glass Studio.png.meta
 guid: bcb08f3b1a90a0c4cbbefa462b433718
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: -8799565619784837751
     second: Joann's Glass Studio_0
+========
+guid: a1a21cbeb77310b4fb7067d80fc382d0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8903082085024031168
+    second: SoundOn_0
+  - first:
+      213: 5976324220939191416
+    second: SoundOn_1
+  - first:
+      213: -1704419088122778478
+    second: SoundOn_2
+>>>>>>>> origin/Design-Branch:Assets/Sprites/PNGs/SoundOn.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,33 +99,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Win64
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -126,13 +115,17 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<<< HEAD:Assets/Sprites/PNGs/Joann's Glass Studio.png.meta
       name: Joann's Glass Studio_0
+========
+      name: SoundOn_0
+>>>>>>>> origin/Design-Branch:Assets/Sprites/PNGs/SoundOn.png.meta
       rect:
         serializedVersion: 2
-        x: 0
-        y: 14
-        width: 1000
-        height: 970
+        x: 63
+        y: 2
+        width: 516
+        height: 998
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +134,57 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
+<<<<<<<< HEAD:Assets/Sprites/PNGs/Joann's Glass Studio.png.meta
       spriteID: 9851cfed0b9a1e580800000000000000
       internalID: -8799565619784837751
+========
+      spriteID: 04e9ff3a306e17480800000000000000
+      internalID: -8903082085024031168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoundOn_1
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 360
+        width: 110
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 874c4ab073b20f250800000000000000
+      internalID: 5976324220939191416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoundOn_2
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 247
+        width: 160
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ceb08aedfa858e0800000000000000
+      internalID: -1704419088122778478
+>>>>>>>> origin/Design-Branch:Assets/Sprites/PNGs/SoundOn.png.meta
       vertices: []
       indices: 
       edges: []
@@ -158,7 +200,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+<<<<<<<< HEAD:Assets/Sprites/PNGs/Joann's Glass Studio.png.meta
     nameFileIdTable: {}
+========
+    nameFileIdTable:
+      SoundOn_0: -8903082085024031168
+      SoundOn_1: 5976324220939191416
+      SoundOn_2: -1704419088122778478
+>>>>>>>> origin/Design-Branch:Assets/Sprites/PNGs/SoundOn.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
