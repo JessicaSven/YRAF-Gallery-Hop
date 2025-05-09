@@ -24,6 +24,6 @@ public class FinishedIcon : MonoBehaviour
 
     public void OnClick()
     {
-        VisitedPlacesManager.instance.MarkPlaceAsVisited(place.PlaceName);
+        VisitedPlacesManager.instance.MarkPlaceAsVisited(place);
     }
 }

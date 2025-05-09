@@ -18,6 +18,8 @@ public class SessionManager : MonoBehaviour
 
     public GameObject qrScannerObject;
 
+    bool hasPlayerFinished = false;
+
     // Event to broadcast the scanned URL
     public event Action<string> OnQRCodeScanned;
 
@@ -40,7 +42,8 @@ public class SessionManager : MonoBehaviour
             temp.transform.localPosition = item.Position;
             temp.initialize(item);
             interactablePlaces.Add(temp);
-            finishedPlaces.addPlace(item);
+            finishedPlaces.addPlace(item); /// need to remove when we build, it debug
+
             galleryList.AddGalleryItem(item);
         }
     }
@@ -86,7 +89,7 @@ public class SessionManager : MonoBehaviour
                 // Mark the place as visited using the VisitedPlacesManager
                 if (VisitedPlacesManager.instance != null)
                 {
-                    VisitedPlacesManager.instance.MarkPlaceAsVisited(place.PlaceName);
+                    VisitedPlacesManager.instance.MarkPlaceAsVisited(place);
                 }
                 break;
             }
@@ -95,6 +98,15 @@ public class SessionManager : MonoBehaviour
         // Disable the scanner after scan
         DisableQRScanner();
     }
+    public void HandleSucessfulSubmission(PlaceSO place)
+    {
+        List<string> RavenLines = new List<string>() {
+            place.RavenSucessScript,
+        };
+        TalkingRaven._instance.StartTalking(RavenLines);
+        SessionManager.Instance.finishedPlaces.addPlace(place);
+        
+    }
 
     public void IntroRaven()
     {
@@ -102,11 +114,39 @@ public class SessionManager : MonoBehaviour
         if (TalkingRaven._instance != null)
         {   
             List<string> RavenLines = new List<string>() {
-                "Caw! Hello there!",
-                "Click or press space to continue...",
-                "This is the last line!"
+                "Need of a helpful nudge? I'm your helpful Curatorial Guide.. Tap me and see what I have to chatter about. Caw-caw!"
             };
             TalkingRaven._instance.StartTalking(RavenLines);
         }
     }
+
+    public void ShowRandomRavenHint()
+    {
+        string hint = VisitedPlacesManager.instance.GetRandomUnvisitedPlaceHint();
+        if (!string.IsNullOrEmpty(hint))
+        {
+            List<string> RavenLines = new List<string>() {
+                hint
+            };
+            TalkingRaven._instance.StartTalking(RavenLines);
+        }
+    }
+    public void OnRavenFinished()
+    {
+        if (!hasPlayerFinished&& VisitedPlacesManager.instance.GetUnvisitedPlaces().Count == 0)
+        {
+            StartSubmission();
+        }
+    }
+
+    public void StartSubmission()
+    {
+
+    }
+    public void finishGame()
+    {
+        hasPlayerFinished = true;
+    }
+
+    
 }

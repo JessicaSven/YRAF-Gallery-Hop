@@ -63,7 +63,7 @@ public class TalkingRaven : MonoBehaviour
     {
         isTalking = false;
         currentLineIndex = 0;
-        
+        SessionManager.Instance.OnRavenFinished();
         if (speechBubble != null)
         {
             speechBubble.SetActive(false);
