@@ -37,7 +37,7 @@ public class FirebaseInput : MonoBehaviour
             firebaseService = FindAnyObjectByType<FirebaseService>();
             if (firebaseService == null)
             {
-                ShowError("FirebaseService not found! Please assign it in the inspector.");
+                ShowError("Unable to connect to the server. Please try again later.");
             }
         }
 
@@ -48,18 +48,23 @@ public class FirebaseInput : MonoBehaviour
 
     private void InitializeExhibitDropdown()
     {
-        if (favouriteExhibitDropdown != null)
+        if (favouriteExhibitDropdown != null && SessionManager.Instance != null)
         {
             favouriteExhibitDropdown.ClearOptions();
 
             List<string> options = new List<string>
             {
-                "Select an exhibit",  // Default option
-                "Exhibit A",
-                "Exhibit B",
-                "Exhibit C",
-                // Add more exhibits as needed
+                "Select your favorite exhibit"  // Default option
             };
+
+            // Add all place names from SessionManager
+            foreach (var place in SessionManager.Instance.GetAllPlaces())
+            {
+                if (place != null)
+                {
+                    options.Add(place.PlaceName);
+                }
+            }
 
             favouriteExhibitDropdown.AddOptions(options);
         }
@@ -74,25 +79,25 @@ public class FirebaseInput : MonoBehaviour
         // Validate input fields
         if (string.IsNullOrEmpty(emailInputField.text))
         {
-            ShowError("Please enter an email address");
+            ShowError("Please enter your email address");
             return;
         }
 
         if (!Regex.IsMatch(emailInputField.text, EmailPattern))
         {
-            ShowError("Please enter a valid email address");
+            ShowError("Please enter a valid email address (e.g., name@example.com)");
             return;
         }
 
         if (string.IsNullOrEmpty(fullNameInputField.text))
         {
-            ShowError("Please enter a full name");
+            ShowError("Please enter your name");
             return;
         }
 
-        if (favouriteExhibitDropdown.value == 0)  // First option is our default "Select an exhibit"
+        if (favouriteExhibitDropdown.value == 0)  // First option is our default "Select your favorite exhibit"
         {
-            ShowError("Please select an exhibit");
+            ShowError("Please select your favorite exhibit");
             return;
         }
 
@@ -111,12 +116,12 @@ public class FirebaseInput : MonoBehaviour
             };
 
             await firebaseService.SaveUserData(userData);
-            ShowSuccess("Data saved successfully!");
+            ShowSuccess("Thank you for your submission!");
             ClearInputFields();
         }
         catch (System.Exception e)
         {
-            ShowError($"Failed to save data: {e.Message}");
+            ShowError("Unable to save your information. Please try again later.");
         }
         finally
         {

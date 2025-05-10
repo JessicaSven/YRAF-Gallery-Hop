@@ -1,3 +1,4 @@
+using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class UIController : MonoBehaviour
@@ -6,6 +7,7 @@ public class UIController : MonoBehaviour
     public GameObject mainCanvas; // Reference to your main canvas GameObject
 
     public PlaceDetailsUI placePopup;
+    public FirebaseInput firebaseInput;
     public GalleryList galleryList;
     public static  UIController instance; // Reference to the UIController script
 
@@ -37,5 +39,9 @@ public class UIController : MonoBehaviour
     {
         Debug.Log("test");
         galleryList.gameObject.SetActive(true); // Show the gallery list
+    }
+    public void ShowSubmitResult()
+    {
+        firebaseInput.gameObject.SetActive(true); // Show the submit result popup
     }
 }

@@ -100,11 +100,12 @@ public class SessionManager : MonoBehaviour
     }
     public void HandleSucessfulSubmission(PlaceSO place)
     {
+        SoundManager.Instance.PlaySuccess();
         List<string> RavenLines = new List<string>() {
             place.RavenSucessScript,
         };
         TalkingRaven._instance.StartTalking(RavenLines);
-        SessionManager.Instance.finishedPlaces.addPlace(place);
+        finishedPlaces.addPlace(place);
         
     }
 
@@ -141,12 +142,15 @@ public class SessionManager : MonoBehaviour
 
     public void StartSubmission()
     {
-
+        UIController.instance.ShowSubmitResult();
     }
     public void finishGame()
     {
         hasPlayerFinished = true;
     }
 
-    
+    public PlaceSO[] GetAllPlaces()
+    {
+        return places;
+    }
 }

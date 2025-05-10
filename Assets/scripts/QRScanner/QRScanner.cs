@@ -2,19 +2,45 @@ using UnityEngine;
 using ZXing; // ZXing barcode reader
 using ZXing.Common;
 using System.Collections; // Required for IEnumerator
+using UnityEngine.UI;
+using TMPro;
 
 public class QRScanner : MonoBehaviour
 {
+    [Header("Camera Settings")]
     private WebCamTexture camTexture;
     private BarcodeReader barcodeReader;
     public string scannedText = "";
+
+    [Header("UI References")]
+    [SerializeField] private RawImage cameraDisplay;
+    [SerializeField] private Image overlayImage;
+    [SerializeField] private Button exitButton;
+    [SerializeField] private TextMeshProUGUI statusText;
+    [SerializeField] private TextMeshProUGUI scannedTextDisplay;
+
+    [Header("Fade Settings")]
+    [SerializeField] private float fadeInDuration = 0.5f;
+    private float currentFadeTime = 0f;
+    private bool isFading = false;
 
     private bool cameraStarted = false;
     private bool permissionDenied = false;
 
     void OnEnable()
     {
+        if (cameraDisplay != null)
+        {
+            // Start with fully transparent
+            Color color = cameraDisplay.color;
+            color.a = 0f;
+            cameraDisplay.color = color;
+        }
         StartCoroutine(StartCameraWhenReady());
+        if (exitButton != null)
+        {
+            exitButton.onClick.AddListener(OnExitButtonClicked);
+        }
     }
 
     void OnDisable()
@@ -24,6 +50,15 @@ public class QRScanner : MonoBehaviour
             camTexture.Stop();
             cameraStarted = false;
         }
+        if (exitButton != null)
+        {
+            exitButton.onClick.RemoveListener(OnExitButtonClicked);
+        }
+    }
+
+    private void OnExitButtonClicked()
+    {
+        gameObject.SetActive(false);
     }
 
     private IEnumerator StartCameraWhenReady()
@@ -35,11 +70,12 @@ public class QRScanner : MonoBehaviour
         {
             Debug.LogError("Camera permission denied.");
             permissionDenied = true;
-            yield break; // Exit
+            UpdateStatusText("Camera access denied");
+            yield break;
         }
 
         // Wait until WebCam devices are available
-        float timeout = 5f; // 5 seconds max
+        float timeout = 5f;
         while (WebCamTexture.devices.Length == 0 && timeout > 0f)
         {
             timeout -= Time.deltaTime;
@@ -50,13 +86,13 @@ public class QRScanner : MonoBehaviour
         {
             Debug.LogError("No camera devices found.");
             permissionDenied = true;
-            yield break; // Exit
+            UpdateStatusText("No camera found");
+            yield break;
         }
 
         WebCamDevice[] devices = WebCamTexture.devices;
         string selectedCameraName = null;
 
-        // Try to select rear camera if possible
         foreach (var device in devices)
         {
             if (!device.isFrontFacing)
@@ -69,19 +105,53 @@ public class QRScanner : MonoBehaviour
         if (selectedCameraName == null)
             selectedCameraName = devices[0].name;
 
-        // Create and start the camera
         camTexture = new WebCamTexture(selectedCameraName);
         camTexture.Play();
 
-        barcodeReader = new BarcodeReader();
+        // Wait for the camera to start
+        while (!camTexture.isPlaying)
+        {
+            yield return null;
+        }
 
+        if (cameraDisplay != null)
+        {
+            cameraDisplay.texture = camTexture;
+            // Adjust the RawImage's aspect ratio to match the camera
+            float aspectRatio = (float)camTexture.width / camTexture.height;
+            cameraDisplay.rectTransform.sizeDelta = new Vector2(
+                cameraDisplay.rectTransform.rect.height * aspectRatio,
+                cameraDisplay.rectTransform.rect.height
+            );
+
+            // Start fade in
+            currentFadeTime = 0f;
+            isFading = true;
+        }
+
+        barcodeReader = new BarcodeReader();
         cameraStarted = true;
+        UpdateStatusText("Scanning...");
     }
 
     void Update()
     {
+        if (isFading && cameraDisplay != null)
+        {
+            currentFadeTime += Time.deltaTime;
+            float alpha = Mathf.Clamp01(currentFadeTime / fadeInDuration);
+            Color color = cameraDisplay.color;
+            color.a = alpha;
+            cameraDisplay.color = color;
+
+            if (alpha >= 1f)
+            {
+                isFading = false;
+            }
+        }
+
         if (permissionDenied || !cameraStarted)
-            return; // Don't do anything if not allowed or not started
+            return;
 
         if (camTexture != null && camTexture.isPlaying && camTexture.width > 100)
         {
@@ -97,8 +167,8 @@ public class QRScanner : MonoBehaviour
                 {
                     scannedText = result.Text;
                     Debug.Log("Scanned QR Code: " + scannedText);
+                    UpdateScannedText("Scanned: " + scannedText);
 
-                    // Send the scanned URL to SessionManager
                     if (SessionManager.Instance != null)
                     {
                         SessionManager.Instance.HandleScannedURL(scannedText);
@@ -109,44 +179,19 @@ public class QRScanner : MonoBehaviour
         }
     }
 
-    private void OnGUI()
+    private void UpdateStatusText(string text)
     {
-        if (permissionDenied)
+        if (statusText != null)
         {
-            GUI.Label(new Rect(10, 10, 400, 50), "Camera access denied or no camera found.");
-            return;
+            statusText.text = text;
         }
+    }
 
-        if (camTexture != null)
+    private void UpdateScannedText(string text)
+    {
+        if (scannedTextDisplay != null)
         {
-            float camAspect = (float)camTexture.width / (float)camTexture.height;
-            float screenAspect = (float)Screen.width / (float)Screen.height;
-
-            float scaledHeight, scaledWidth;
-            if (camAspect > screenAspect)
-            {
-                scaledWidth = Screen.width;
-                scaledHeight = Screen.width / camAspect;
-            }
-            else
-            {
-                scaledHeight = Screen.height;
-                scaledWidth = Screen.height * camAspect;
-            }
-
-            float x = (Screen.width - scaledWidth) / 2;
-            float y = (Screen.height - scaledHeight) / 2;
-
-            GUI.DrawTexture(new Rect(x, y, scaledWidth, scaledHeight), camTexture, ScaleMode.ScaleToFit);
-
-            if (string.IsNullOrEmpty(scannedText))
-            {
-                GUI.Label(new Rect(10, 10, 300, 50), "Scanning...");
-            }
-            else
-            {
-                GUI.Label(new Rect(10, 10, 500, 50), "Scanned: " + scannedText);
-            }
+            scannedTextDisplay.text = text;
         }
     }
 }

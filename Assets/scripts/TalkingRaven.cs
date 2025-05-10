@@ -46,6 +46,7 @@ public class TalkingRaven : MonoBehaviour
         dialogueLines = new List<string>(lines);
         currentLineIndex = 0;
         isTalking = true;
+        SoundManager.Instance.PlayRandomRavenSound();
         
         if (speechBubble != null)
         {
