@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlaceName: KIAC Back Porch
   Icon: {fileID: 1853742735524693719, guid: 6728ae74d33b0b342a56273b87a5fd70, type: 3}
-  Color: {r: 0.10196079, g: 0.45882356, b: 0.73333335, a: 1}
+  Color: {r: 0.16470589, g: 0.61960787, b: 0.96862745, a: 1}
   Content: "The KIAC Back Porch becomes a living canvas this year! Join visiting
     Whitehorse artist Gorellaume for a collaborative mural painting\u2014add a splash,
     swirl, or signature to this ever-growing work. It\u2019s art in motion, shared
@@ -23,5 +23,5 @@ MonoBehaviour:
   RavenSucessScript: KIAC Back Porch! Cozy, caw-laborative, and absolutely caw-some.
   RavenHintScript: 'Activity: Collaborative Mural painting with Whitehorse Artist
     Gorellaume'
-  Url: 
-  Position: {x: 0, y: 0}
+  Url: https://www.google.ca/maps/place/Klondike+Institute+of+Art+and+Culture/@64.0609974,-139.4353744,18.79z/data=!4m6!3m5!1s0x5148e3ca37f87273:0x322cb287a2753742!8m2!3d64.0609741!4d-139.4352439!16s%2Fg%2F1tdnwjw3?entry=ttu&g_ep=EgoyMDI1MDUwNi4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D
+  Position: {x: -120, y: 27}

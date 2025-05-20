@@ -6,6 +6,7 @@ public class VisitedPlacesManager : MonoBehaviour
 {
     public static VisitedPlacesManager instance;
     private HashSet<string> visitedPlaces = new HashSet<string>();
+    private const string VISITED_PLACES_KEY = "VisitedPlaces";
     
     public SessionManager sessionManager;
 
@@ -22,6 +23,36 @@ public class VisitedPlacesManager : MonoBehaviour
         }
     }
 
+    public void LoadVisitedPlaces()
+    {
+        string savedPlaces = PlayerPrefs.GetString(VISITED_PLACES_KEY, "");
+        if (!string.IsNullOrEmpty(savedPlaces))
+        {
+            string[] places = savedPlaces.Split(',');
+            visitedPlaces = new HashSet<string>(places);
+            
+            // Update finished places and create prefabs for all visited places
+            foreach (string placeName in visitedPlaces)
+            {
+                PlaceSO place = sessionManager.places.FirstOrDefault(p => p.PlaceName == placeName);
+                if (place != null)
+                {
+                    sessionManager.finishedPlaces.addPlace(place);
+                }
+            }
+            
+            
+            UpdatePlacesVisibility();
+        }
+    }
+
+    private void SaveVisitedPlaces()
+    {
+        string placesString = string.Join(",", visitedPlaces);
+        PlayerPrefs.SetString(VISITED_PLACES_KEY, placesString);
+        PlayerPrefs.Save();
+    }
+
     public void MarkPlaceAsVisited(PlaceSO place)
     {
         if (!visitedPlaces.Contains(place.PlaceName))
@@ -30,6 +61,7 @@ public class VisitedPlacesManager : MonoBehaviour
             visitedPlaces.Add(place.PlaceName);
             UpdatePlacesVisibility();
             sessionManager.HandleSucessfulSubmission(place);
+            SaveVisitedPlaces();
         }
     }
 
@@ -63,5 +95,14 @@ public class VisitedPlacesManager : MonoBehaviour
     private void UpdatePlacesVisibility()
     {
         sessionManager.UpdateVisibility(visitedPlaces);
+    }
+
+    public void ClearAllVisitedPlaces()
+    {
+        visitedPlaces.Clear();
+        PlayerPrefs.DeleteKey(VISITED_PLACES_KEY);
+        PlayerPrefs.Save();
+        UpdatePlacesVisibility();
+        sessionManager.HandleClearAllVisitedPlaces();
     }
 } 

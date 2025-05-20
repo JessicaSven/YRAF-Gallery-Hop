@@ -7,8 +7,17 @@ public class InteractablePlace : MonoBehaviour
     public Image image;
     public GameObject visitedIndicator;
 
-    internal void initialize(PlaceSO item)
+    internal void initialize(PlaceSO item, bool isInteratable = true)
     {
+        if (isInteratable)
+        {
+            GetComponent<Button>().interactable = true;
+            GetComponent<Button>().onClick.AddListener(Ontap);
+        }
+        else
+        {
+            GetComponent<Button>().interactable = false;
+        }
         place = item;
         image.sprite = item.Icon;
         UpdateVisibility(VisitedPlacesManager.instance.HasVisitedPlace(item.PlaceName));

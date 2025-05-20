@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlaceName: St. Paul's Anglican Church
   Icon: {fileID: 2134585490727990134, guid: df105678ca38ba049810b0a55693de3d, type: 3}
-  Color: {r: 0.95294124, g: 0.86666673, b: 0.019607844, a: 1}
+  Color: {r: 1, g: 0.92941177, b: 0.7882353, a: 1}
   Content: "Step into a historic sanctuary hosting contemporary voices. St. Paul\u2019s
     features a visual exhibition by Natasha Henderson, paired with literary readings
     by local authors (pending confirmation). This elegant Gothic Revival church becomes
@@ -24,5 +24,5 @@ MonoBehaviour:
     light."
   RavenHintScript: 'Activity: Exhibit by Natasha Henderson (confirmed) and readings
     by local authors (unconfirmed)'
-  Url: 
-  Position: {x: 0, y: 0}
+  Url: https://www.google.ca/maps/place/St+Pauls+Church/@64.0587051,-139.4383897,18.79z/data=!4m6!3m5!1s0x5148e3cb500c08a5:0x66c8155e4b3bb85f!8m2!3d64.0587471!4d-139.4382861!16s%2Fm%2F09gh8hm?entry=ttu&g_ep=EgoyMDI1MDUwNi4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D
+  Position: {x: -176, y: -167}

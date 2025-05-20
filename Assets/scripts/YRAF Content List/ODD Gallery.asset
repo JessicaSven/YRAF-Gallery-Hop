@@ -26,5 +26,5 @@ MonoBehaviour:
   RavenSucessScript: You found ODD Gallery! Strange tastes, sharp eyes. Caw!
   RavenHintScript: "\u201CStamp not showing? Double-check you scanned the right shiny
     square!\u201D"
-  Url: 
-  Position: {x: 0, y: 0}
+  Url: https://www.google.ca/maps/place/ODD+Gallery/@64.0610725,-139.4356628,19.25z/data=!4m6!3m5!1s0x5148e3dd7c0d3749:0x2a0d946003d1fc62!8m2!3d64.0609356!4d-139.4351678!16s%2Fg%2F11pv3j6050?entry=ttu&g_ep=EgoyMDI1MDUwNi4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D
+  Position: {x: -154, y: 32}

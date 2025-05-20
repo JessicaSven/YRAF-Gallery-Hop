@@ -30,4 +30,14 @@ public class FinishedPlaces : MonoBehaviour
             iconPair.Value.UpdateVisibility(visitedPlaces.Contains(iconPair.Key));
         }
     }
+
+    internal void ClearAllPlaces()
+    {
+        foreach (var icon in placeIcons)
+        {
+            Destroy(icon.Value.gameObject);
+        }
+        placeIcons.Clear();
+        places.Clear();
+    }
 }

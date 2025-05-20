@@ -23,5 +23,5 @@ MonoBehaviour:
   RavenSucessScript: Dawson Daily News! Juicy headlines, sweet scraps. CAW-rect!
   RavenHintScript: "\u201CCollect every stamp to unlock the secret finale. Trust
     me\u2014it\u2019s worth the squawk.\u201D"
-  Url: 
-  Position: {x: 0, y: 0}
+  Url: https://www.google.ca/maps/place/Dawson+Daily+News,+Dawson+Historical+Complex+National+Historic+Site/@64.0621488,-139.4325776,18.5z/data=!4m6!3m5!1s0x5148e3ca2d2407a5:0xcfc15c019c617c82!8m2!3d64.0622536!4d-139.431105!16s%2Fg%2F11bwny1lw0?entry=ttu&g_ep=EgoyMDI1MDUwNi4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D
+  Position: {x: -85, y: 130}

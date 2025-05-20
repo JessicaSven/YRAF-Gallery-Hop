@@ -118,6 +118,8 @@ public class FirebaseInput : MonoBehaviour
             await firebaseService.SaveUserData(userData);
             ShowSuccess("Thank you for your submission!");
             ClearInputFields();
+            gameObject.SetActive(false); // Hide the input form after submission
+            SessionManager.Instance.RevealSecretPlace();
         }
         catch (System.Exception e)
         {

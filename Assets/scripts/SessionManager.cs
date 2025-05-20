@@ -7,6 +7,7 @@ public class SessionManager : MonoBehaviour
 {
     public static SessionManager Instance { get; private set; }
     public PlaceSO[] places;
+    public PlaceSO secretPlace;
     public InteractablePlace interactablePlacePrefab;
     public List<InteractablePlace> interactablePlaces;
     public FinishedPlaces finishedPlaces;
@@ -42,10 +43,11 @@ public class SessionManager : MonoBehaviour
             temp.transform.localPosition = item.Position;
             temp.initialize(item);
             interactablePlaces.Add(temp);
-            finishedPlaces.addPlace(item); /// need to remove when we build, it debug
+            // finishedPlaces.addPlace(item); /// need to remove when we build, it debug
 
             galleryList.AddGalleryItem(item);
         }
+        VisitedPlacesManager.instance.LoadVisitedPlaces();
     }
 
     public void UpdateVisibility(HashSet<string> visitedPlaces)
@@ -152,5 +154,40 @@ public class SessionManager : MonoBehaviour
     public PlaceSO[] GetAllPlaces()
     {
         return places;
+    }
+
+    public void RevealSecretPlace()
+    {
+        InteractablePlace temp = Instantiate(interactablePlacePrefab, interactableItemsParent);
+        temp.transform.localPosition = secretPlace.Position;
+        temp.initialize(secretPlace, false);
+    }
+
+    internal void HandleClearAllVisitedPlaces()
+    {
+        finishedPlaces.ClearAllPlaces();
+    }
+
+    public void CreateAllPlacePrefabs()
+    {
+        // Clear existing prefabs
+        foreach (var place in interactablePlaces)
+        {
+            if (place != null)
+            {
+                Destroy(place.gameObject);
+            }
+        }
+        interactablePlaces.Clear();
+
+        // Create new prefabs for all places
+        foreach (var place in places)
+        {
+            InteractablePlace temp = Instantiate(interactablePlacePrefab, interactableItemsParent);
+            temp.transform.localPosition = place.Position;
+            temp.initialize(place);
+            interactablePlaces.Add(temp);
+            galleryList.AddGalleryItem(place);
+        }
     }
 }
