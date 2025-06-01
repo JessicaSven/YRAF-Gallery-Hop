@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlaceName: Danoja Zho Cultural Centre
   Icon: {fileID: 6949183697231607133, guid: f449d26641e07054dbc26918aad1153a, type: 3}
-  Color: {r: 0.8156863, g: 0.49411765, b: 0.81960785, a: 1}
+  Color: {r: 0.9372549, g: 0.827451, b: 0.9372549, a: 1}
   Content: "The Danoja Zho Cultural Centre honours the heritage and living culture
     of the Tr\u2019ond\xEBk Hw\xEBch\u2019in people. Through exhibits, storytelling,
     and land-based perspectives, it invites visitors to learn respectfully on Indigenous

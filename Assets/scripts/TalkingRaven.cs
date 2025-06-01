@@ -17,6 +17,8 @@ public class TalkingRaven : MonoBehaviour
     private List<string> dialogueLines = new List<string>();
     private bool isTalking = false;
     private int currentLineIndex = 0;
+    private Coroutine autoAdvanceCoroutine;
+    private const float INACTIVITY_TIMEOUT = 10f; // 10 seconds timeout
 
     private void Awake()
     {
@@ -55,6 +57,13 @@ public class TalkingRaven : MonoBehaviour
         
         // Display the first line
         DisplayCurrentLine();
+
+        // Start the auto-advance coroutine
+        if (autoAdvanceCoroutine != null)
+        {
+            StopCoroutine(autoAdvanceCoroutine);
+        }
+        autoAdvanceCoroutine = StartCoroutine(AutoAdvanceDialogue());
     }
 
     /// <summary>
@@ -73,6 +82,28 @@ public class TalkingRaven : MonoBehaviour
         if (dialogueText != null)
         {
             dialogueText.text = "";
+        }
+
+        // Stop the auto-advance coroutine
+        if (autoAdvanceCoroutine != null)
+        {
+            StopCoroutine(autoAdvanceCoroutine);
+            autoAdvanceCoroutine = null;
+        }
+    }
+
+    /// <summary>
+    /// Coroutine to automatically advance dialogue after inactivity timeout
+    /// </summary>
+    private IEnumerator AutoAdvanceDialogue()
+    {
+        while (isTalking)
+        {
+            yield return new WaitForSeconds(INACTIVITY_TIMEOUT);
+            if (isTalking)
+            {
+                AdvanceDialogue();
+            }
         }
     }
 
