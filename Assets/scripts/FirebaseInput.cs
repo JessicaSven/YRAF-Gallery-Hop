@@ -7,8 +7,6 @@ using System.Text.RegularExpressions;
 public class FirebaseInput : MonoBehaviour
 {
     [Header("Input Fields")]
-    [SerializeField] private TMP_InputField emailInputField;
-    [SerializeField] private TMP_InputField fullNameInputField;
     [SerializeField] private TMP_Dropdown favouriteExhibitDropdown;
 
     [Header("Dependencies")]
@@ -76,59 +74,46 @@ public class FirebaseInput : MonoBehaviour
         HideError();
         HideSuccess();
 
-        // Validate input fields
-        if (string.IsNullOrEmpty(emailInputField.text))
+        // Validate dropdown selection
+        if (favouriteExhibitDropdown == null)
         {
-            ShowError("Please enter your email address");
+            ShowError("Dropdown not found. Please try again.");
             return;
         }
 
-        if (!Regex.IsMatch(emailInputField.text, EmailPattern))
+        if (favouriteExhibitDropdown.value == 0)
         {
-            ShowError("Please enter a valid email address (e.g., name@example.com)");
+            ShowError("Please select your favorite exhibit before submitting.");
             return;
         }
 
-        if (string.IsNullOrEmpty(fullNameInputField.text))
-        {
-            ShowError("Please enter your name");
-            return;
-        }
-
-        if (favouriteExhibitDropdown.value == 0)  // First option is our default "Select your favorite exhibit"
-        {
-            ShowError("Please select your favorite exhibit");
-            return;
-        }
-
-        // Disable submit button while processing
-        if (submitButton != null) submitButton.interactable = false;
+        // Get the selected exhibit name
+        string selectedExhibit = favouriteExhibitDropdown.options[favouriteExhibitDropdown.value].text;
 
         try
         {
-            // Create user data object
-            UserData userData = new UserData
-            {
-                Email = emailInputField.text,
-                FullName = fullNameInputField.text,
-                FavouriteExhibit = favouriteExhibitDropdown.options[favouriteExhibitDropdown.value].text,
-                CompletedGame = true  // Default value for new users
-            };
+            // Submit the vote
+            bool success = await firebaseService.SubmitVote(selectedExhibit);
 
-            await firebaseService.SaveUserData(userData);
-            ShowSuccess("Thank you for your submission!");
-            ClearInputFields();
-            gameObject.SetActive(false); // Hide the input form after submission
-            SessionManager.Instance.RevealSecretPlace();
+            if (success)
+            {
+                ShowSuccess($"Thank you! Your vote for '{selectedExhibit}' has been submitted successfully.");
+                // Optionally clear the form or keep the selection
+                // ClearInputFields();
+            }
+            else
+            {
+                ShowError("Failed to submit your vote. Please try again.");
+            }
         }
-        catch (System.Exception e)
+        catch (System.Exception ex)
         {
-            ShowError("Unable to save your information. Please try again later.");
+            ShowError($"An error occurred: {ex.Message}");
+            Debug.LogError($"Error submitting vote: {ex}");
         }
         finally
         {
-            // Re-enable submit button
-            if (submitButton != null) submitButton.interactable = true;
+            gameObject.SetActive(false); 
         }
     }
 
@@ -172,8 +157,6 @@ public class FirebaseInput : MonoBehaviour
 
     private void ClearInputFields()
     {
-        emailInputField.text = "";
-        fullNameInputField.text = "";
         favouriteExhibitDropdown.value = 0;
     }
 

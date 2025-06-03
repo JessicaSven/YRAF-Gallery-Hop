@@ -43,7 +43,7 @@ public class SessionManager : MonoBehaviour
             temp.transform.localPosition = item.Position;
             temp.initialize(item);
             interactablePlaces.Add(temp);
-            // finishedPlaces.addPlace(item); /// need to remove when we build, it debug
+            finishedPlaces.addPlace(item); /// need to remove when we build, it debug
 
             galleryList.AddGalleryItem(item);
         }

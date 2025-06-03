@@ -22,6 +22,56 @@ public class MapPinController : MonoBehaviour
     private static extern bool HasLocationData();
 #endif
 
+    // Helper struct for double-precision 2D coordinates
+    [System.Serializable]
+    public struct DoubleVector2
+    {
+        public double x, y;
+        
+        public DoubleVector2(double x, double y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+        
+        public static DoubleVector2 operator +(DoubleVector2 a, DoubleVector2 b)
+        {
+            return new DoubleVector2(a.x + b.x, a.y + b.y);
+        }
+        
+        public static DoubleVector2 operator -(DoubleVector2 a, DoubleVector2 b)
+        {
+            return new DoubleVector2(a.x - b.x, a.y - b.y);
+        }
+        
+        public static DoubleVector2 operator *(DoubleVector2 a, double scalar)
+        {
+            return new DoubleVector2(a.x * scalar, a.y * scalar);
+        }
+        
+        public static DoubleVector2 operator *(double scalar, DoubleVector2 a)
+        {
+            return new DoubleVector2(a.x * scalar, a.y * scalar);
+        }
+        
+        public static double Distance(DoubleVector2 a, DoubleVector2 b)
+        {
+            double dx = a.x - b.x;
+            double dy = a.y - b.y;
+            return System.Math.Sqrt(dx * dx + dy * dy);
+        }
+        
+        public Vector2 ToVector2()
+        {
+            return new Vector2((float)x, (float)y);
+        }
+        
+        public override string ToString()
+        {
+            return $"({x:F6}, {y:F6})";
+        }
+    }
+
     [Header("Map Display")]
     [SerializeField] private double mapWidth = 1000.0;  // Width of the map in pixels/units
     [SerializeField] private double mapHeight = 1000.0; // Height of the map in pixels/units
@@ -181,7 +231,7 @@ public class MapPinController : MonoBehaviour
 
     private void UpdatePinPosition(double latitude, double longitude)
     {
-        Vector2 finalPosition;
+        DoubleVector2 finalPosition;
 
         if (useReferencePoints && ValidateReferencePoints())
         {
@@ -196,18 +246,19 @@ public class MapPinController : MonoBehaviour
             Debug.Log($"Using simple mapping: ({latitude:F6}, {longitude:F6}) -> ({finalPosition.x:F2}, {finalPosition.y:F2})");
         }
 
-        // Apply position clamping if enabled
+        // Convert to Vector2 for Unity UI and apply clamping if enabled
+        Vector2 finalPositionVector = finalPosition.ToVector2();
         if (enablePositionClamping)
         {
-            finalPosition = ClampPinPosition(finalPosition);
-            Debug.Log($"Position after clamping: ({finalPosition.x:F2}, {finalPosition.y:F2})");
+            finalPositionVector = ClampPinPosition(finalPositionVector);
+            Debug.Log($"Position after clamping: ({finalPositionVector.x:F2}, {finalPositionVector.y:F2})");
         }
 
         // Update pin position
         if (pinRect != null)
         {
-            pinRect.anchoredPosition = finalPosition;
-            Debug.Log($"Pin moved to: ({finalPosition.x:F2}, {finalPosition.y:F2}) from GPS: ({latitude:F6}, {longitude:F6})");
+            pinRect.anchoredPosition = finalPositionVector;
+            Debug.Log($"Pin moved to: ({finalPositionVector.x:F2}, {finalPositionVector.y:F2}) from GPS: ({latitude:F6}, {longitude:F6})");
         }
     }
 
@@ -221,195 +272,130 @@ public class MapPinController : MonoBehaviour
                referencePin4Latitude != 0 && referencePin4Longitude != 0;
     }
 
-    private Vector2 MapCoordinateToPosition(double latitude, double longitude)
+    private DoubleVector2 MapCoordinateToPosition(double latitude, double longitude)
     {
-        // Get reference points in screen space
-        Vector2 p1 = referencePin1.anchoredPosition; // Point 1
-        Vector2 p2 = referencePin2.anchoredPosition; // Point 2
-        Vector2 p3 = referencePin3.anchoredPosition; // Point 3
-        Vector2 p4 = referencePin4.anchoredPosition; // Point 4
+        // Get reference points in screen space (convert to double precision)
+        DoubleVector2 p1 = new DoubleVector2(referencePin1.anchoredPosition.x, referencePin1.anchoredPosition.y);
+        DoubleVector2 p2 = new DoubleVector2(referencePin2.anchoredPosition.x, referencePin2.anchoredPosition.y);
+        DoubleVector2 p3 = new DoubleVector2(referencePin3.anchoredPosition.x, referencePin3.anchoredPosition.y);
+        DoubleVector2 p4 = new DoubleVector2(referencePin4.anchoredPosition.x, referencePin4.anchoredPosition.y);
 
-        // Get reference coordinates (lat/lng)
-        Vector2 c1 = new Vector2((float)referencePin1Longitude, (float)referencePin1Latitude);
-        Vector2 c2 = new Vector2((float)referencePin2Longitude, (float)referencePin2Latitude);
-        Vector2 c3 = new Vector2((float)referencePin3Longitude, (float)referencePin3Latitude);
-        Vector2 c4 = new Vector2((float)referencePin4Longitude, (float)referencePin4Latitude);
+        // Get reference coordinates (lat/lng) with full double precision
+        DoubleVector2 c1 = new DoubleVector2(referencePin1Longitude, referencePin1Latitude);
+        DoubleVector2 c2 = new DoubleVector2(referencePin2Longitude, referencePin2Latitude);
+        DoubleVector2 c3 = new DoubleVector2(referencePin3Longitude, referencePin3Latitude);
+        DoubleVector2 c4 = new DoubleVector2(referencePin4Longitude, referencePin4Latitude);
 
         // Target coordinate
-        Vector2 targetCoord = new Vector2((float)longitude, (float)latitude);
+        DoubleVector2 targetCoord = new DoubleVector2(longitude, latitude);
 
         Debug.Log($"Reference points GPS: c1={c1}, c2={c2}, c3={c3}, c4={c4}");
         Debug.Log($"Reference points Screen: p1={p1}, p2={p2}, p3={p3}, p4={p4}");
         Debug.Log($"Target GPS: {targetCoord}");
 
         // Check for exact matches first
-        float eps = 1e-6f;
-        if (Vector2.Distance(targetCoord, c1) < eps) return p1;
-        if (Vector2.Distance(targetCoord, c2) < eps) return p2;
-        if (Vector2.Distance(targetCoord, c3) < eps) return p3;
-        if (Vector2.Distance(targetCoord, c4) < eps) return p4;
+        double eps = 1e-9; // Higher precision for doubles
+        if (DoubleVector2.Distance(targetCoord, c1) < eps) return p1;
+        if (DoubleVector2.Distance(targetCoord, c2) < eps) return p2;
+        if (DoubleVector2.Distance(targetCoord, c3) < eps) return p3;
+        if (DoubleVector2.Distance(targetCoord, c4) < eps) return p4;
 
         // Check for degenerate cases (duplicate reference points)
-        if (Vector2.Distance(c1, c2) < eps || Vector2.Distance(c1, c3) < eps || 
-            Vector2.Distance(c1, c4) < eps || Vector2.Distance(c2, c3) < eps || 
-            Vector2.Distance(c2, c4) < eps || Vector2.Distance(c3, c4) < eps)
+        if (DoubleVector2.Distance(c1, c2) < eps || DoubleVector2.Distance(c1, c3) < eps || 
+            DoubleVector2.Distance(c1, c4) < eps || DoubleVector2.Distance(c2, c3) < eps || 
+            DoubleVector2.Distance(c2, c4) < eps || DoubleVector2.Distance(c3, c4) < eps)
         {
             Debug.LogWarning("Degenerate quad detected - some reference points have identical GPS coordinates!");
             // Fallback to simple bounds mapping
             return MapCoordinateToPositionSimple(latitude, longitude);
         }
 
-        // Find barycentric coordinates (u,v) for the target coordinate within the quad c1,c2,c3,c4
-        Vector2 uv = FindBarycentricCoordinates(targetCoord, c1, c2, c3, c4);
-
-        Debug.Log($"Calculated barycentric: u={uv.x:F3}, v={uv.y:F3}");
-
-        // Apply the same barycentric coordinates to the screen quad p1,p2,p3,p4
-        Vector2 result = BilinearInterpolateQuad(uv.x, uv.y, p1, p2, p3, p4);
+        // Use generalized coordinate mapping instead of bilinear interpolation
+        DoubleVector2 result = MapUsingGeneralizedCoordinates(targetCoord, c1, c2, c3, c4, p1, p2, p3, p4);
         
         Debug.Log($"Final screen position: {result}");
         
         return result;
     }
 
-    private Vector2 FindBarycentricCoordinates(Vector2 target, Vector2 c1, Vector2 c2, Vector2 c3, Vector2 c4)
+    private DoubleVector2 MapUsingGeneralizedCoordinates(DoubleVector2 target, 
+        DoubleVector2 c1, DoubleVector2 c2, DoubleVector2 c3, DoubleVector2 c4,
+        DoubleVector2 p1, DoubleVector2 p2, DoubleVector2 p3, DoubleVector2 p4)
     {
-        // Solve the inverse bilinear interpolation problem
-        // target = (1-u)(1-v)*c1 + u(1-v)*c2 + (1-u)v*c3 + uv*c4
-        // This expands to: target = c1 + u*(c2-c1) + v*(c3-c1) + uv*(c1-c2-c3+c4)
+        // Use proper GPS distance calculations with Haversine formula
+        // This accounts for the spherical nature of GPS coordinates
         
-        Vector2 A = target - c1;
-        Vector2 B = c2 - c1;
-        Vector2 C = c3 - c1;
-        Vector2 D = c1 - c2 - c3 + c4;
-
-        // We need to solve: A = B*u + C*v + D*u*v
-        // This gives us two equations (one for x, one for y):
-        // A.x = B.x*u + C.x*v + D.x*u*v
-        // A.y = B.y*u + C.y*v + D.y*u*v
-
-        float eps = 1e-6f;
+        double d1 = CalculateGPSDistance(target, c1);
+        double d2 = CalculateGPSDistance(target, c2);
+        double d3 = CalculateGPSDistance(target, c3);
+        double d4 = CalculateGPSDistance(target, c4);
         
-        // If D is very small, this becomes a linear system
-        if (Mathf.Abs(D.x) < eps && Mathf.Abs(D.y) < eps)
-        {
-            // Linear case: A = B*u + C*v
-            // Solve using Cramer's rule
-            float det = B.x * C.y - B.y * C.x;
-            if (Mathf.Abs(det) < eps)
-            {
-                // Degenerate case, fallback
-                Debug.LogWarning("Degenerate linear case in bilinear interpolation");
-                return new Vector2(0.5f, 0.5f);
-            }
-            
-            float uLinear = (A.x * C.y - A.y * C.x) / det;
-            float vLinear = (B.x * A.y - B.y * A.x) / det;
-            Debug.Log($"Linear case: u={uLinear:F3}, v={vLinear:F3} for target {target}");
-            return new Vector2(uLinear, vLinear);
-        }
-
-        // Quadratic case - solve using the method from the research
-        // Rearrange to: (A.x - C.x*v) = (B.x + D.x*v)*u and (A.y - C.y*v) = (B.y + D.y*v)*u
-        // So: (A.x - C.x*v)/(B.x + D.x*v) = (A.y - C.y*v)/(B.y + D.y*v)
-        // Cross multiply: (A.x - C.x*v)*(B.y + D.y*v) = (A.y - C.y*v)*(B.x + D.x*v)
+        Debug.Log($"GPS distances (meters): d1={d1:F1}m, d2={d2:F1}m, d3={d3:F1}m, d4={d4:F1}m");
         
-        // Expand and collect terms for quadratic in v:
-        // A.x*B.y + A.x*D.y*v - C.x*v*B.y - C.x*v*D.y*v = A.y*B.x + A.y*D.x*v - C.y*v*B.x - C.y*v*D.x*v
-        // (A.x*D.y - A.y*D.x - C.x*B.y + C.y*B.x)*v + (C.y*D.x - C.x*D.y)*v^2 = A.y*B.x - A.x*B.y
+        // Add small epsilon to prevent division by zero
+        double eps = 1e-6; // 1 millimeter
+        d1 = System.Math.Max(d1, eps);
+        d2 = System.Math.Max(d2, eps);
+        d3 = System.Math.Max(d3, eps);
+        d4 = System.Math.Max(d4, eps);
         
-        float a = C.y * D.x - C.x * D.y;
-        float b = A.x * D.y - A.y * D.x - C.x * B.y + C.y * B.x;
-        float c = A.y * B.x - A.x * B.y;
-
-        float vResult;
-        if (Mathf.Abs(a) < eps)
-        {
-            // Linear equation in v
-            if (Mathf.Abs(b) < eps)
-            {
-                vResult = 0.5f; // Fallback
-                Debug.LogWarning("Degenerate quadratic case in bilinear interpolation");
-            }
-            else
-            {
-                vResult = -c / b;
-            }
-        }
-        else
-        {
-            // Quadratic equation: a*v^2 + b*v + c = 0
-            float discriminant = b * b - 4 * a * c;
-            if (discriminant < 0)
-            {
-                Debug.LogWarning($"Negative discriminant in bilinear interpolation: {discriminant}");
-                return new Vector2(0.5f, 0.5f); // Fallback
-            }
-            
-            float sqrtDisc = Mathf.Sqrt(discriminant);
-            float v1 = (-b + sqrtDisc) / (2 * a);
-            float v2 = (-b - sqrtDisc) / (2 * a);
-            
-            // Choose the root that's in [0,1], or closest to that range
-            if (v1 >= 0 && v1 <= 1)
-                vResult = v1;
-            else if (v2 >= 0 && v2 <= 1)
-                vResult = v2;
-            else
-            {
-                // Both roots are outside [0,1], choose the closer one
-                float dist1 = Mathf.Min(Mathf.Abs(v1), Mathf.Abs(v1 - 1));
-                float dist2 = Mathf.Min(Mathf.Abs(v2), Mathf.Abs(v2 - 1));
-                vResult = (dist1 < dist2) ? v1 : v2;
-                Debug.Log($"Both v roots outside [0,1]: v1={v1:F3}, v2={v2:F3}, chose v={vResult:F3}");
-            }
-        }
-
-        // Now solve for u given v
-        float denom_x = B.x + D.x * vResult;
-        float denom_y = B.y + D.y * vResult;
+        // Calculate weights (inverse distance squared for smoother interpolation)
+        double w1 = 1.0 / (d1 * d1);
+        double w2 = 1.0 / (d2 * d2);
+        double w3 = 1.0 / (d3 * d3);
+        double w4 = 1.0 / (d4 * d4);
         
-        float uResult;
-        if (Mathf.Abs(denom_x) > Mathf.Abs(denom_y))
-        {
-            uResult = (A.x - C.x * vResult) / denom_x;
-        }
-        else if (Mathf.Abs(denom_y) > eps)
-        {
-            uResult = (A.y - C.y * vResult) / denom_y;
-        }
-        else
-        {
-            uResult = 0.5f; // Fallback
-            Debug.LogWarning("Zero denominator in u calculation");
-        }
-
-        Debug.Log($"Barycentric coords: u={uResult:F3}, v={vResult:F3} for target {target}");
+        double totalWeight = w1 + w2 + w3 + w4;
         
-        // Don't clamp - allow coordinates outside [0,1] for extrapolation
-        return new Vector2(uResult, vResult);
+        // Normalize weights
+        w1 /= totalWeight;
+        w2 /= totalWeight;
+        w3 /= totalWeight;
+        w4 /= totalWeight;
+        
+        Debug.Log($"GPS-corrected IDW weights: w1={w1:F4}, w2={w2:F4}, w3={w3:F4}, w4={w4:F4}");
+        
+        // Calculate weighted average of screen positions
+        DoubleVector2 result = w1 * p1 + w2 * p2 + w3 * p3 + w4 * p4;
+        
+        return result;
     }
 
-    private Vector2 BilinearInterpolateQuad(float u, float v, Vector2 p1, Vector2 p2, Vector2 p3, Vector2 p4)
+    private double CalculateGPSDistance(DoubleVector2 coord1, DoubleVector2 coord2)
     {
-        // Standard bilinear interpolation:
-        // result = (1-u)(1-v)*p1 + u(1-v)*p2 + (1-u)v*p3 + uv*p4
-        return (1f - u) * (1f - v) * p1 + 
-               u * (1f - v) * p2 + 
-               (1f - u) * v * p3 + 
-               u * v * p4;
+        // Haversine formula for calculating distance between two GPS coordinates
+        // Returns distance in meters
+        
+        double lat1 = coord1.y * System.Math.PI / 180.0; // Convert to radians
+        double lon1 = coord1.x * System.Math.PI / 180.0;
+        double lat2 = coord2.y * System.Math.PI / 180.0;
+        double lon2 = coord2.x * System.Math.PI / 180.0;
+        
+        double dlat = lat2 - lat1;
+        double dlon = lon2 - lon1;
+        
+        double a = System.Math.Sin(dlat / 2.0) * System.Math.Sin(dlat / 2.0) +
+                   System.Math.Cos(lat1) * System.Math.Cos(lat2) *
+                   System.Math.Sin(dlon / 2.0) * System.Math.Sin(dlon / 2.0);
+        
+        double c = 2.0 * System.Math.Atan2(System.Math.Sqrt(a), System.Math.Sqrt(1.0 - a));
+        
+        double earthRadiusMeters = 6371000.0; // Earth's radius in meters
+        double distance = earthRadiusMeters * c;
+        
+        return distance;
     }
 
-    private Vector2 MapCoordinateToPositionSimple(double latitude, double longitude)
+    private DoubleVector2 MapCoordinateToPositionSimple(double latitude, double longitude)
     {
-        // Fallback simple mapping using bounds
-        float normalizedX = Mathf.InverseLerp((float)topLeftLongitude, (float)bottomRightLongitude, (float)longitude);
-        float normalizedY = Mathf.InverseLerp((float)topLeftLatitude, (float)bottomRightLatitude, (float)latitude);
+        // Fallback simple mapping using bounds - all calculations in double precision
+        double normalizedX = (longitude - topLeftLongitude) / (bottomRightLongitude - topLeftLongitude);
+        double normalizedY = (latitude - topLeftLatitude) / (bottomRightLatitude - topLeftLatitude);
 
-        float xPos = Mathf.Lerp(0, (float)mapWidth, normalizedX);
-        float yPos = Mathf.Lerp(0, (float)mapHeight, normalizedY);
+        double xPos = normalizedX * mapWidth;
+        double yPos = normalizedY * mapHeight;
 
-        return new Vector2(xPos - (float)mapWidth/2, yPos - (float)mapHeight/2);
+        return new DoubleVector2(xPos - mapWidth/2.0, yPos - mapHeight/2.0);
     }
 
     private void OnDestroy()
