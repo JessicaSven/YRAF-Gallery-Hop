@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edeb923af9f57cd48a78b2104c643aac, type: 3}
+  m_Name: Confluence Gallery  SOVA
+  m_EditorClassIdentifier: 
+  PlaceName: Confluence Gallery / SOVA
+  Icon: {fileID: 0}
+  Color: {r: 0.6039216, g: 0.72156864, b: 0.6392157, a: 0}
+  Content: "\"Inner Space \u2013 Outer Space\" Basia Hinton Large-scale paintings
+    on African bark cloth explore cosmic and earthly connections. Viewers are invited
+    to float above wild roses, mushrooms, and stars in a macrocosmic dreamscape.  "
+  RavenSucessScript: "Confluence Gallery! Art collides\u2014like wings in the wind. "
+  RavenHintScript: "\u201CFeathers getting ruffled? You don\u2019t need to collect
+    in order\u2014hop as you wish!\u201D"
+  Url: https://www.google.ca/maps/place/Yukon+School+of+Visual+Arts/@64.0615253,-139.4325712,19.79z/data=!3m1!5s0x5148e3cbb5dcec59:0x68e8f15cbd388556!4m6!3m5!1s0x5148e3cbcadb8ea1:0x219f9486bdf296ed!8m2!3d64.0615782!4d-139.4322754!16s%2Fm%2F0522l9_?entry=ttu&g_ep=EgoyMDI1MDUwNi4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D
+  Position: {x: 0, y: 0}

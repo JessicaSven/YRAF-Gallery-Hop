@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edeb923af9f57cd48a78b2104c643aac, type: 3}
-  m_Name: St. Paul's Anglican Church
+  m_Name: St. Paul's Anglican Church 1
   m_EditorClassIdentifier: 
   PlaceName: St. Paul's Anglican Church
   Icon: {fileID: 2134585490727990134, guid: df105678ca38ba049810b0a55693de3d, type: 3}
-  Color: {r: 1, g: 0.92941177, b: 0.7882353, a: 1}
-  Content: '"Natasha Henderson: New Paintings" Natasha Henderson New oil works by
-    Dawson-based artist Natasha Henderson, exhibited in the atmospheric setting of
-    the historic church. The paintings offer quiet contemplation through rich colour
-    and form. '
+  Color: {r: 0.7411765, g: 0.56078434, b: 0.39215687, a: 1}
+  Content: '"River Readings" Jeffrey Mackie, with Lulu Keating and Danny Dowhal Three
+    Dawson writers share fiction and poetry in an intimate reading event. The historic
+    church setting adds resonance to their reflections on life and place. '
   RavenSucessScript: "Wings tucked at St. Paul\u2019s Church\u2014holy hush, holy
     light."
   RavenHintScript: 
