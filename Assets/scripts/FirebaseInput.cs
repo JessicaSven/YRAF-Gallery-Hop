@@ -55,12 +55,18 @@ public class FirebaseInput : MonoBehaviour
                 "Select your favorite exhibit"  // Default option
             };
 
-            // Add all place names from SessionManager
+            // Add all vote titles from SessionManager
             foreach (var place in SessionManager.Instance.GetAllPlaces())
             {
-                if (place != null)
+                if (place != null && place.VoteTitles != null)
                 {
-                    options.Add(place.PlaceName);
+                    foreach (string voteTitle in place.VoteTitles)
+                    {
+                        if (!string.IsNullOrEmpty(voteTitle))
+                        {
+                            options.Add(voteTitle);
+                        }
+                    }
                 }
             }
 

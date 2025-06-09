@@ -4,6 +4,9 @@ using System.Threading.Tasks;
 using System.Text;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.Networking;
+using System.IO;
+using TMPro;
 
 [Serializable]
 public class UserData
@@ -89,6 +92,11 @@ public class FirebaseService : MonoBehaviour
     private const string PROJECT_ID = "yraf-gallery-hop";
     private const string FirebaseBaseUrl = "https://firestore.googleapis.com/v1/projects/" + PROJECT_ID + "/databases/(default)/documents";
     private const string UUID_PLAYERPREFS_KEY = "UserUUID";
+
+    // Triple-tap protection for report generation
+    private int reportGenerationTapCount = 0;
+    private float lastTapTime = 0f;
+    private const float TAP_TIMEOUT = 1f; // Reset count after 1 seconds of no taps
 
     // UUID Management
     private string GetOrCreateUUID()
@@ -347,9 +355,31 @@ public class FirebaseService : MonoBehaviour
         }
     }
 
-    // Unity-callable wrapper for generating vote tally report
+    // Unity-callable wrapper for generating vote tally report with triple-tap protection
     public async void GenerateVoteTallyReportForUnity()
     {
+        float currentTime = Time.time;
+        
+        // Reset count if too much time has passed since last tap
+        if (currentTime - lastTapTime > TAP_TIMEOUT)
+        {
+            reportGenerationTapCount = 0;
+        }
+        
+        reportGenerationTapCount++;
+        lastTapTime = currentTime;
+        
+        Debug.Log($"Report generation tap {reportGenerationTapCount}/3");
+        
+        if (reportGenerationTapCount < 3)
+        {
+            Debug.Log($"Tap {reportGenerationTapCount} more time(s) within {TAP_TIMEOUT} seconds to generate report");
+            return;
+        }
+        
+        // Reset count and generate report
+        reportGenerationTapCount = 0;
+        Debug.Log("Generating vote tally report...");
         await GenerateVoteTallyReport();
     }
 
@@ -460,6 +490,12 @@ public class FirebaseService : MonoBehaviour
             string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
             string filename = $"VoteTallyReport_{timestamp}.txt";
             
+#if UNITY_WEBGL && !UNITY_EDITOR
+            // For WebGL builds, trigger browser download
+            DownloadFileForWebGL(reportContent, filename);
+            Debug.Log($"Vote tally report prepared for download: {filename}");
+#else
+            // For standalone builds and editor
             // Get the persistent data path (works across platforms)
             string filePath = System.IO.Path.Combine(Application.persistentDataPath, filename);
             
@@ -483,6 +519,7 @@ public class FirebaseService : MonoBehaviour
             await System.IO.File.WriteAllTextAsync(editorFilePath, reportContent);
             Debug.Log($"Editor copy saved to: {editorFilePath}");
 #endif
+#endif
         }
         catch (Exception ex)
         {
@@ -490,6 +527,26 @@ public class FirebaseService : MonoBehaviour
             throw;
         }
     }
+
+    #if UNITY_WEBGL && !UNITY_EDITOR
+    private void DownloadFileForWebGL(string content, string filename)
+    {
+        // Convert content to base64 for web download
+        byte[] bytes = System.Text.Encoding.UTF8.GetBytes(content);
+        string base64 = System.Convert.ToBase64String(bytes);
+        
+        // Create data URL
+        string dataUrl = "data:text/plain;base64," + base64;
+        
+        // Trigger download using JavaScript
+        Application.ExternalEval($@"
+            var link = document.createElement('a');
+            link.download = '{filename}';
+            link.href = '{dataUrl}';
+            link.click();
+        ");
+    }
+    #endif
 
     private async Task<(bool exists, string docId)> FindDocumentByEmail(string email)
     {
