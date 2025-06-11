@@ -12,14 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeb923af9f57cd48a78b2104c643aac, type: 3}
   m_Name: 501 Grant Street
   m_EditorClassIdentifier: 
-  PlaceName: '501 Grant Street  '
-  Icon: {fileID: 0}
-  Color: {r: 0.8509804, g: 0.59607846, b: 0.38431373, a: 0}
-  Content: "\"Migrations: Land Sky Water\" Sally DeMerchant This outdoor installation
+  PlaceName: 501 Grant Street
+  Icon: {fileID: 21300000, guid: 779e6af95e4f7924caf6fd2d65eae0a3, type: 3}
+  Color: {r: 0.85098046, g: 0.59607846, b: 0.38431376, a: 1}
+  Content: "\"Migrations: Land Sky Water\"\nSally DeMerchant\nThis outdoor installation
     explores the migration patterns of multiple species, inviting reflection on instinct,
     survival, and convergence. Each migration follows its own path\u2014yet they
-    all arrive at the same truth.  "
-  RavenSucessScript: 
+    all arrive at the same truth.\n"
+  RavenSucessScript: "\u201CWings, fins, hooves\u2014all moving as one. Migration,
+    my kin. You understand.\u201D\n"
   RavenHintScript: 
   Url: https://maps.app.goo.gl/YdkHNYoDQYxngfSr7
   Position: {x: 0, y: 0}
+  VoteTitles:
+  - '"Migrations: Land Sky Water"'

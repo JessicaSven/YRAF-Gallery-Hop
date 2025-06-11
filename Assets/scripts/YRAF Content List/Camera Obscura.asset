@@ -12,14 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeb923af9f57cd48a78b2104c643aac, type: 3}
   m_Name: Camera Obscura
   m_EditorClassIdentifier: 
-  PlaceName: St. Paul's Anglican Church
-  Icon: {fileID: 0}
-  Color: {r: 0.5176471, g: 0.827451, b: 0.827451, a: 1}
-  Content: "\u201CRe:Imagine | ReCreate\u201D Andrew Maize Nova Scotia-based artist
+  PlaceName: Camera Obscura
+  Icon: {fileID: -4135311621624287594, guid: 35e7cef6fee7fef4c98c14e74f456576, type: 3}
+  Color: {r: 0.5176471, g: 0.82745105, b: 0.82745105, a: 1}
+  Content: "\u201CRe:Imagine | ReCreate\u201D\nAndrew Maize\nNova Scotia-based artist
     Andrew Maize explores sustainability and creative reuse during his Re:Imagine
     | Re:Create residency with KIAC, culminating in a site-specific public artwork
-    for Yukon Riverside Arts Festival. "
-  RavenSucessScript: 
-  RavenHintScript: 
+    for Yukon Riverside Arts Festival.\n"
+  RavenSucessScript: "\u201CTransformation, reuse, rebirth\u2014my kind of magic!
+    Now where to next, you creative crow?\u201D\n"
+  RavenHintScript: "\u201CFeathers getting ruffled? You don\u2019t need to collect
+    in order\u2014hop as you wish!\u201D"
   Url: https://maps.app.goo.gl/PuKN2JH7qRy6tNnB9
   Position: {x: -176, y: -167}
+  VoteTitles:
+  - "\u201CRe:Imagine | ReCreate\u201D"

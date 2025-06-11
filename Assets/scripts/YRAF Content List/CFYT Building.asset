@@ -13,13 +13,20 @@ MonoBehaviour:
   m_Name: CFYT Building
   m_EditorClassIdentifier: 
   PlaceName: CFYT Building
-  Icon: {fileID: 0}
-  Color: {r: 0.92156863, g: 0.92156863, b: 0.9411765, a: 0}
-  Content: "\"Moloch\u2019s Mosquito\" Matthew Charbonneau A scrap-metal sculpture
+  Icon: {fileID: -5584597377586249350, guid: dd17483c8599949439aa76bc97f7f099, type: 3}
+  Color: {r: 0.9215687, g: 0.9215687, b: 0.94117653, a: 1}
+  Content: "\"Moloch\u2019s Mosquito\"\nMatthew Charbonneau\nA scrap-metal sculpture
     that critiques overconsumption and extraction, drawing parallels between human
     impact and the mosquito's deadly reach. A stark reminder of how small acts can
-    multiply into planetary harm.  "
-  RavenSucessScript: 
+    multiply into planetary harm.\n\n\"Radio Free Arts Fest!\"\nPeter Menzies + Guests\nA
+    live radio broadcast covering festival highlights, artist interviews, and spontaneous
+    conversations with attendees. Includes trivia and music from insect-themed bands
+    like The Beatles and Bee Gees.\"\n"
+  RavenSucessScript: "\u201CScrap metal bites, radio sings, and the bugs? They\u2019ve
+    got rhythm. You\u2019ve tuned into Dawson\u2019s oddest frequency\u2014nice catch!\u201D"
   RavenHintScript: 
   Url: https://maps.app.goo.gl/z9kVJWMzFBBAadDs6
   Position: {x: 0, y: 0}
+  VoteTitles:
+  - "\"Moloch\u2019s Mosquito\""
+  - '"Radio Free Arts Fest!"'

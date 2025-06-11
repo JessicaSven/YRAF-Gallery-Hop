@@ -158,7 +158,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Billy Bigg Blacksmith Shop_0: 5313899257800184255
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -12,13 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeb923af9f57cd48a78b2104c643aac, type: 3}
   m_Name: Double Denim Tattoo Parlour
   m_EditorClassIdentifier: 
-  PlaceName: 'Double Denim Tattoo Parlour '
-  Icon: {fileID: 0}
-  Color: {r: 1, g: 0.89411765, b: 0.5529412, a: 0}
-  Content: "\"Things I Make When I Don\u2019t Wanna Get Off the Couch\" Bee A laid-back
+  PlaceName: Double Denim Tattoo Parlour
+  Icon: {fileID: 6784541322968302740, guid: a0881ac369eca8f4abfdac003a6c9c58, type: 3}
+  Color: {r: 1, g: 0.8941177, b: 0.5529412, a: 1}
+  Content: "\"Things I Make When I Don\u2019t Wanna Get Off the Couch\"\nBee\nA laid-back
     and eclectic collection of art made in moments of stillness. A glimpse into the
-    spontaneous and personal creative process.  "
-  RavenSucessScript: 
+    spontaneous and personal creative process.\n"
+  RavenSucessScript: "\u201CCouch-bound creation? That\u2019s my style! You\u2019ve
+    seen comfort turn to curious beauty.\u201D\n"
   RavenHintScript: 
   Url: https://maps.app.goo.gl/yjWUPvSyKSzNeUXG7
   Position: {x: 0, y: 0}
+  VoteTitles:
+  - "\"Things I Make When I Don\u2019t Wanna Get Off the Couch\""

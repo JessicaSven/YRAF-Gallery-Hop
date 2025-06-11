@@ -13,13 +13,16 @@ MonoBehaviour:
   m_Name: Confluence Gallery  SOVA
   m_EditorClassIdentifier: 
   PlaceName: Confluence Gallery / SOVA
-  Icon: {fileID: 0}
-  Color: {r: 0.6039216, g: 0.72156864, b: 0.6392157, a: 0}
-  Content: "\"Inner Space \u2013 Outer Space\" Basia Hinton Large-scale paintings
+  Icon: {fileID: -3793869378719895217, guid: 6c3cd8659fa51a2429bc0db467012d2c, type: 3}
+  Color: {r: 0.6039216, g: 0.72156864, b: 0.6392157, a: 1}
+  Content: "\"Inner Space \u2013 Outer Space\"\nBasia Hinton\nLarge-scale paintings
     on African bark cloth explore cosmic and earthly connections. Viewers are invited
-    to float above wild roses, mushrooms, and stars in a macrocosmic dreamscape.  "
-  RavenSucessScript: "Confluence Gallery! Art collides\u2014like wings in the wind. "
-  RavenHintScript: "\u201CFeathers getting ruffled? You don\u2019t need to collect
-    in order\u2014hop as you wish!\u201D"
+    to float above wild roses, mushrooms, and stars in a macrocosmic dreamscape.\n"
+  RavenSucessScript: "\u201CYou soared through bark cloth cosmos. Stars, spores,
+    and dreams\u2014nicely done, stargazer.\u201D"
+  RavenHintScript: "\u201CCollect every stamp to unlock the secret finale. Trust
+    me\u2014it\u2019s worth the squawk.\u201D\n"
   Url: https://www.google.ca/maps/place/Yukon+School+of+Visual+Arts/@64.0615253,-139.4325712,19.79z/data=!3m1!5s0x5148e3cbb5dcec59:0x68e8f15cbd388556!4m6!3m5!1s0x5148e3cbcadb8ea1:0x219f9486bdf296ed!8m2!3d64.0615782!4d-139.4322754!16s%2Fm%2F0522l9_?entry=ttu&g_ep=EgoyMDI1MDUwNi4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D
   Position: {x: 0, y: 0}
+  VoteTitles:
+  - "\"Inner Space \u2013 Outer Space\""

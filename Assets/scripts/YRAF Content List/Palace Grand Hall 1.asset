@@ -13,13 +13,19 @@ MonoBehaviour:
   m_Name: Palace Grand Hall 1
   m_EditorClassIdentifier: 
   PlaceName: Palace Grand Hall
-  Icon: {fileID: 0}
-  Color: {r: 0.5882353, g: 0.6901961, b: 1, a: 0}
-  Content: "\"The Drawing Room\" Ava P Christl and Martha Jane Ritchie Inspired by
-    historic \u201Cwithdrawing rooms,\u201D this immersive display of drawings and
-    artist books invites visitors to relax, engage, and create. Salon-style works
-    and 3D pieces are accompanied by tea and conversation.  "
-  RavenSucessScript: 
+  Icon: {fileID: 6542957907831592075, guid: 51e69f26fd6f2074bb2f9a93d4db9ccc, type: 3}
+  Color: {r: 0.6745098, g: 0.75294125, b: 1, a: 1}
+  Content: "\"Felted Narratives: Stories in Wool\"\nJanet Patterson\nTextile artist
+    Janet Patterson shares expressive wool creations, inviting viewers to try needle
+    felting for themselves. Each piece tells a tactile story.\n\n\"The Drawing Room\"\nAva
+    P Christl and Martha Jane Ritchie\nInspired by historic \u201Cwithdrawing rooms,\u201D
+    this immersive display of drawings and artist books invites visitors to relax,
+    engage, and create. Salon-style works and 3D pieces are accompanied by tea and
+    conversation.\"\n"
+  RavenSucessScript: "\u201CWool tells stories, graphite dreams aloud, and conversation
+    steeps like tea. You\u2019ve strolled through a palace of tactile tales.\u201D"
   RavenHintScript: 
   Url: https://maps.app.goo.gl/mdq87QoSaPBuM5FT7
   Position: {x: 0, y: 0}
+  VoteTitles:
+  - '"The Drawing Room"'

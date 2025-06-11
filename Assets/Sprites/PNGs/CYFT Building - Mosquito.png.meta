@@ -158,7 +158,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CYFT Building - Mosquito_0: 7505469337924600235
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

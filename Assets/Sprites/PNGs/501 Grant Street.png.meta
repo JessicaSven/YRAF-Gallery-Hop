@@ -67,7 +67,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -326,14 +326,22 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      501 Grant Street_0: -1014028392432626736
+      501 Grant Street_1: -8318069092409127115
+      501 Grant Street_2: -5803580231415029990
+      501 Grant Street_3: -5034502586243361053
+      501 Grant Street_4: -5161654364976867310
+      501 Grant Street_5: 7509146474129190089
+      501 Grant Street_6: 547261242011925873
+      501 Grant Street_7: 524625155277676713
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

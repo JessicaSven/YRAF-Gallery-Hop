@@ -20,8 +20,10 @@ MonoBehaviour:
     and land-based perspectives, it invites visitors to learn respectfully on Indigenous
     territory. This riverside centre is a space of celebration, education, and connection\u2014rooted
     in place and community."
-  RavenSucessScript: Danoja Zho! Stories soar. Raven listens with respect.
-  RavenHintScript: "\u201CCaww-tion: The secret location only appears after the final
-    stamp!\u201D"
+  RavenSucessScript: "\u201CYou\u2019ve stood where stories root deep. Honour and
+    wisdom walk with you from here.\u201D"
+  RavenHintScript: "\u201CMissed a spot? Open the stamp list to track what\u2019s
+    still hiding!\u201D"
   Url: https://www.google.ca/maps/place/D%C3%A4noj%C3%A0+Zho+Cultural+Centre/@64.0642189,-139.4340269,17.75z/data=!4m6!3m5!1s0x5148e39b11dfcd15:0xd1d86ec1a00b0c53!8m2!3d64.0645015!4d-139.4330441!16s%2Fg%2F11ffwbyhy0?entry=ttu&g_ep=EgoyMDI1MDUwNi4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D
   Position: {x: -253, y: 272}
+  VoteTitles: []

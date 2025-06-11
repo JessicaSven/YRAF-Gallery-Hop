@@ -14,14 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlaceName: Dawson Daily News
   Icon: {fileID: -1429739016836665622, guid: bb74813732db80b4d8c3842213e09a6d, type: 3}
-  Color: {r: 0.60784316, g: 0.78039217, b: 0.88235295, a: 1}
-  Content: "Once home to one of Dawson\u2019s longest-running newspapers, the Dawson
-    Daily News building preserves northern Canada\u2019s journalistic legacy. A historic
-    hub for printers and publishers from 1899 to 1954, it now invites visitors to
-    reflect on the stories, people, and presses that helped shape Dawson\u2019s media-rich
-    Gold Rush past."
-  RavenSucessScript: Dawson Daily News! Juicy headlines, sweet scraps. CAW-rect!
-  RavenHintScript: "\u201CCollect every stamp to unlock the secret finale. Trust
-    me\u2014it\u2019s worth the squawk.\u201D"
+  Color: {r: 0.60784316, g: 0.7803922, b: 0.882353, a: 1}
+  Content: "\"Chapter 10: Requiem in Eight Movements\"\nDavid Curtis\nPart of a broader
+    multimedia series, this installation examines the artist\u2019s daily interactions
+    with flora, fauna, and atmospheric phenomena. It blurs the boundary between human
+    and non-human experience.\n"
+  RavenSucessScript: "\u201CEight movements. One deep breath. You\u2019ve caught
+    the rhythm of the wild and the wistful.\u201D\n"
+  RavenHintScript: "\u201CQR codes like sunshine\u2014sometimes you need to adjust
+    your angle to see them clearly.\u201D"
   Url: https://www.google.ca/maps/place/Dawson+Daily+News,+Dawson+Historical+Complex+National+Historic+Site/@64.0621488,-139.4325776,18.5z/data=!4m6!3m5!1s0x5148e3ca2d2407a5:0xcfc15c019c617c82!8m2!3d64.0622536!4d-139.431105!16s%2Fg%2F11bwny1lw0?entry=ttu&g_ep=EgoyMDI1MDUwNi4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D
   Position: {x: -85, y: 130}
+  VoteTitles:
+  - '"Chapter 10: Requiem in Eight Movements"'

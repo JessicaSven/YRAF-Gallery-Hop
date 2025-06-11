@@ -13,13 +13,21 @@ MonoBehaviour:
   m_Name: Billy Biggs Blacksmith Shop
   m_EditorClassIdentifier: 
   PlaceName: Billy Biggs Blacksmith Shop
-  Icon: {fileID: 0}
-  Color: {r: 0.6509804, g: 0.6509804, b: 0.6509804, a: 0}
-  Content: "\"Patient 0: Sinthia\" mo knight A haunting blend of performance and
+  Icon: {fileID: 5313899257800184255, guid: 57ae5ca6bf3c7d1409c564a5e42fb4d9, type: 3}
+  Color: {r: 0.9215687, g: 0.9215687, b: 0.94117653, a: 1}
+  Content: "\"Patient 0: Sinthia\"\nmo knight\nA haunting blend of performance and
     handmade dolls introduces Sinthia\u2014an enigmatic figure promising escape from
     loneliness and despair. Surrender to her presence and transcend the limits of
-    earthly suffering.  "
-  RavenSucessScript: 
-  RavenHintScript: 
+    earthly suffering.\n\n\"Dealer\u2019s Choice (Doll Distribution)\"\nGabe McLellan\nThis
+    mixed media installation uses dolls as unsettling symbols of control and identity,
+    spread across collage, video, print, and book. Viewers are challenged to confront
+    the eerie power dynamics at play in these surrogate figures.\"\n"
+  RavenSucessScript: "\u201CDolls whisper here\u2014of pain, power, and strange salvation.
+    You\u2019ve entered a forge of identity where the uncanny rules the room.\u201D"
+  RavenHintScript: "\u201CRemember: the art\u2019s outside the game too\u2014look
+    up, look around, soak it in!\u201D"
   Url: https://www.google.ca/maps/place/Billy+Bigg's+Blacksmith+Shop/@64.0604097,-139.4367591,17z/data=!3m1!4b1!4m6!3m5!1s0x5148e35d00efccb3:0x5cb675df15e5f1a0!8m2!3d64.0604074!4d-139.4341842!16s%2Fg%2F11t9cy672p?entry=ttu&g_ep=EgoyMDI1MDUwNi4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D
   Position: {x: 0, y: 0}
+  VoteTitles:
+  - '"Patient 0: Sinthia"'
+  - "\"Dealer\u2019s Choice (Doll Distribution)\""

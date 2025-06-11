@@ -158,7 +158,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CFYT Building - Radio_0: -5584597377586249350
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

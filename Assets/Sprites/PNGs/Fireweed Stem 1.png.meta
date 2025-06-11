@@ -183,7 +183,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fireweed Stem 1_0: -1274529769645529576
+      Fireweed Stem 1_1: 3258174997077013233
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

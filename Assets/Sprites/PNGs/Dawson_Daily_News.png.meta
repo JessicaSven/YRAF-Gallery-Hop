@@ -158,7 +158,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dawson_Daily_News_0: -1429739016836665622
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

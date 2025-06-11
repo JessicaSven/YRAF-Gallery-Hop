@@ -15,12 +15,31 @@ MonoBehaviour:
   PlaceName: St. Paul's Anglican Church
   Icon: {fileID: 2134585490727990134, guid: df105678ca38ba049810b0a55693de3d, type: 3}
   Color: {r: 1, g: 0.92941177, b: 0.7882353, a: 1}
-  Content: '"Natasha Henderson: New Paintings" Natasha Henderson New oil works by
-    Dawson-based artist Natasha Henderson, exhibited in the atmospheric setting of
-    the historic church. The paintings offer quiet contemplation through rich colour
-    and form. '
-  RavenSucessScript: "Wings tucked at St. Paul\u2019s Church\u2014holy hush, holy
-    light."
+  Content: '"Natasha Henderson: New Paintings"
+
+    Natasha Henderson
+
+    New oil
+    works by Dawson-based artist Natasha Henderson, exhibited in the atmospheric
+    setting of the historic church. The paintings offer quiet contemplation through
+    rich colour and form.
+
+
+    "River Readings"
+
+    Jeffrey Mackie, with Lulu Keating
+    and Danny Dowhal
+
+    Three Dawson writers share fiction and poetry in an intimate
+    reading event. The historic church setting adds resonance to their reflections
+    on life and place."
+
+'
+  RavenSucessScript: "\u201CPaintings and poetry echo beneath sacred rafters. You\u2019ve
+    gathered grace in colour and voice\u2014art and spirit side by side.\u201D\n"
   RavenHintScript: 
   Url: https://www.google.ca/maps/place/St+Pauls+Church/@64.0587051,-139.4383897,18.79z/data=!4m6!3m5!1s0x5148e3cb500c08a5:0x66c8155e4b3bb85f!8m2!3d64.0587471!4d-139.4382861!16s%2Fm%2F09gh8hm?entry=ttu&g_ep=EgoyMDI1MDUwNi4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D
   Position: {x: -176, y: -167}
+  VoteTitles:
+  - '"Natasha Henderson: New Paintings"'
+  - '"River Readings" '

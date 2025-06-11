@@ -13,12 +13,44 @@ MonoBehaviour:
   m_Name: Ruby's Place
   m_EditorClassIdentifier: 
   PlaceName: Ruby's Place
-  Icon: {fileID: 0}
-  Color: {r: 0.60784316, g: 0.78039217, b: 0.88235295, a: 0}
-  Content: '"The Story So Far" Claire Gallagher An excerpt from a graphic novel in
-    progress, set in a fictional 1960s mining town. It explores Northern isolation,
-    queerness, and the fine line between human and monstrous.  '
-  RavenSucessScript: "Ruby\u2019s Place cracked! Rich history, shiny finds. CAW!"
-  RavenHintScript: 
+  Icon: {fileID: -3103549794962549916, guid: ec459ca310d2bb947a7ec8cf7cdc490f, type: 3}
+  Color: {r: 1, g: 0.6862745, b: 0.50980395, a: 0}
+  Content: '"The Story So Far"
+
+    Claire Gallagher
+
+    An excerpt from a graphic
+    novel in progress, set in a fictional 1960s mining town. It explores Northern
+    isolation, queerness, and the fine line between human and monstrous.
+
+
+    "Re:
+    Unicorn"
+
+    Abigail Clapper and Grace Hirsch
+
+    Three large-scale illustrated
+    paper works reimagine mythical creatures through themes of labour, movement,
+    and nostalgia. The adaptable installation evokes stories of healing and rediscovery."
+
+
+    "Athabaskan
+    Style: Pre-Contact Stories and Designs"
+
+    Shadunjen van Kampen
+
+    Watercolour
+    paintings inspired by ancient Athabaskan artistic traditions. This exhibit reclaims
+    visual stories often lost in the dominant culture."
+
+'
+  RavenSucessScript: "\u201CThree stories, one nest: memory, myth, and medicine.
+    You\u2019ve stepped into a house of quiet rebellions and reclaimed wonder.\u201D"
+  RavenHintScript: "\u201CHeard whispers about a hidden vault? Finish your round
+    to see what squawks back.\u201D"
   Url: https://www.google.ca/maps/place/Ruby's+Place/@64.0612051,-139.4352177,20.38z/data=!4m6!3m5!1s0x5148e3ca5449fe59:0xf84150417d22f3f4!8m2!3d64.061178!4d-139.435219!16s%2Fg%2F1tf2rw6q?entry=ttu&g_ep=EgoyMDI1MDUwNi4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D
   Position: {x: 0, y: 0}
+  VoteTitles:
+  - '"The Story So Far"'
+  - '"Re: Unicorn"'
+  - '"Athabaskan Style: Pre-Contact Stories and Designs"'

@@ -15,16 +15,15 @@ MonoBehaviour:
   PlaceName: ODD Gallery
   Icon: {fileID: 21300000, guid: 6de92cfe51991c64c90c5eb7f58993cc, type: 3}
   Color: {r: 0.5176471, g: 0.827451, b: 0.827451, a: 1}
-  Content: The Northern Fibres Guild is a volunteer-driven organiation that fosters
-    fibre arts across the Yukon. From spinning and dyeing to weaving,, felting, and
-    beading, members explore a wide range of techniques while sharing knowledge and
-    creative inspiration. "Fibres of the Land" features the "Climate Stripes Tapestry,"
-    a collaborative piece woven during the 2024 Jenni House Residency that visualizes
-    climate change in the Yukon through colour and texture. Additional works showcase
-    the diversity and talent within the guild today. We hope this exhibition sparks
-    our curiosity about fibre arts and the creative community behind them.
-  RavenSucessScript: You found ODD Gallery! Strange tastes, sharp eyes. Caw!
+  Content: "\u201CWeaving the Midnight Sun\u201D\nNorthern Fibres Guild\nWeaving
+    the Midnight Sun celebrates Yukon fibre artists through traditional and contemporary
+    textile works that reflect the North\u2019s light, land, and the enduring strength
+    of community handcraft.\n"
+  RavenSucessScript: "\u201CThreads of light and land! You\u2019ve witnessed fibre
+    alchemy. Let\u2019s keep spinning this yarn.\u201D"
   RavenHintScript: "\u201CStamp not showing? Double-check you scanned the right shiny
     square!\u201D"
   Url: https://www.google.ca/maps/place/ODD+Gallery/@64.0610725,-139.4356628,19.25z/data=!4m6!3m5!1s0x5148e3dd7c0d3749:0x2a0d946003d1fc62!8m2!3d64.0609356!4d-139.4351678!16s%2Fg%2F11pv3j6050?entry=ttu&g_ep=EgoyMDI1MDUwNi4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D
   Position: {x: -154, y: 32}
+  VoteTitles:
+  - "\u201CWeaving the Midnight Sun\u201D"

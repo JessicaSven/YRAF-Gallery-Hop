@@ -283,7 +283,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Camera Obscura_0: -4135311621624287594
+      Camera Obscura_1: 1655574821414845236
+      Camera Obscura_2: -8149278302843310092
+      Camera Obscura_3: 3409026968447317648
+      Camera Obscura_4: 3734425863903526439
+      Camera Obscura_5: -6212155363516163324
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

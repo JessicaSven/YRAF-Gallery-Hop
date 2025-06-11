@@ -12,13 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeb923af9f57cd48a78b2104c643aac, type: 3}
   m_Name: Peabody's Photo Parlour and P.B.G Gallery
   m_EditorClassIdentifier: 
-  PlaceName: 'Peabody''s Photo Parlour and P.B.G Gallery '
-  Icon: {fileID: 0}
-  Color: {r: 1, g: 0.89411765, b: 0.5529412, a: 0}
-  Content: '"Tailings" Amy Ball, featuring Melissa Naef A photographic exploration
-    of Dawson City by Melissa Naef, paired with an artist book launch. This long-form
-    documentary project reveals layered impressions of the Yukon landscape and life.  '
-  RavenSucessScript: 
+  PlaceName: Peabody's Photo Parlour and P.B.G Gallery
+  Icon: {fileID: 4313077694101960970, guid: eb0e7a9ea12b1ed4f97bae2d0cd85bf9, type: 3}
+  Color: {r: 1, g: 0.8941177, b: 0.5529412, a: 1}
+  Content: '"Tailings"
+
+    Amy Ball, featuring Melissa Naef
+
+    A photographic
+    exploration of Dawson City by Melissa Naef, paired with an artist book launch.
+    This long-form documentary project reveals layered impressions of the Yukon landscape
+    and life.
+
+
+'
+  RavenSucessScript: "\u201CPhotographs like footprints. You\u2019ve followed memory
+    across this wild place.\u201D"
   RavenHintScript: 
   Url: https://maps.app.goo.gl/F2QDyqzT43caUpHz9
   Position: {x: 0, y: 0}
+  VoteTitles:
+  - '"Tailings"'

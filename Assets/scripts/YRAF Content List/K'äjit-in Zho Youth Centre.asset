@@ -13,13 +13,22 @@ MonoBehaviour:
   m_Name: "K'\xE4jit-in Zho Youth Centre"
   m_EditorClassIdentifier: 
   PlaceName: "K'\xE4jit-in Zho Youth Centre"
-  Icon: {fileID: 0}
-  Color: {r: 0.8392157, g: 0.92156863, b: 0.6666667, a: 0}
-  Content: '"Land & Sky: Student Exhibition" Angela Edmunds (student work) Created
+  Icon: {fileID: 8732564673526578217, guid: be19ae0118b672b4586b63db26e6c8cf, type: 3}
+  Color: {r: 0.83921576, g: 0.9215687, b: 0.6666667, a: 1}
+  Content: '"Land & Sky: Student Exhibition"
+
+    Angela Edmunds (student work)
+
+    Created
     by students from Robert Service School, this exhibition reflects personal connections
     to land, story, and imagination. The work spans painting, sculpture, pottery,
-    and paper art.  '
-  RavenSucessScript: 
+    and paper art.
+
+'
+  RavenSucessScript: "\u201CYou\u2019ve glimpsed the world through student eyes.
+    Wonder, meet wisdom.\u201D\n"
   RavenHintScript: 
   Url: https://maps.app.goo.gl/moV9Yhi754CuRbxA7
   Position: {x: 0, y: 0}
+  VoteTitles:
+  - '"Land & Sky: Student Exhibition"'

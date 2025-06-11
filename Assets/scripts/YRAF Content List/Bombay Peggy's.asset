@@ -13,12 +13,21 @@ MonoBehaviour:
   m_Name: Bombay Peggy's
   m_EditorClassIdentifier: 
   PlaceName: 'Bombay Peggy''s '
-  Icon: {fileID: 0}
-  Color: {r: 0.9372549, g: 0.827451, b: 0.9372549, a: 0}
-  Content: '"In Bloom" Philomene CL This playful ceramic series features hand-built
-    vases inspired by flora. Each vibrant piece is unique, celebrating the freedom
-    and spontaneity of handcrafted work.  '
-  RavenSucessScript: 
+  Icon: {fileID: 3318507541969073501, guid: 7626e53d15a5a0140bd46ee7c31f9c03, type: 3}
+  Color: {r: 0.93725497, g: 0.82745105, b: 0.93725497, a: 1}
+  Content: '"In Bloom"
+
+    Philomene CL
+
+    This playful ceramic series features
+    hand-built vases inspired by flora. Each vibrant piece is unique, celebrating
+    the freedom and spontaneity of handcrafted work.
+
+'
+  RavenSucessScript: "\u201CCeramics in bloom\u2014fragile, wild, and alive. You\u2019ve
+    sniffed joy in the clay.\u201D"
   RavenHintScript: 
   Url: https://maps.app.goo.gl/7yJj7FgYTogLBx249
   Position: {x: 0, y: 0}
+  VoteTitles:
+  - '"In Bloom"'

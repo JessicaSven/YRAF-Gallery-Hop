@@ -13,6 +13,7 @@ public class PlaceSO : ScriptableObject
     public string RavenSucessScript;
     [TextArea(3, 10)]
     public string RavenHintScript;
+     [TextArea(3, 10)]
     public string Url;
     public Vector2 Position;
     public List<string> VoteTitles;
