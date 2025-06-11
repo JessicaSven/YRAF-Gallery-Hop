@@ -27,7 +27,7 @@ MonoBehaviour:
   RavenHintScript: "\u201CRemember: the art\u2019s outside the game too\u2014look
     up, look around, soak it in!\u201D"
   Url: https://www.google.ca/maps/place/Billy+Bigg's+Blacksmith+Shop/@64.0604097,-139.4367591,17z/data=!3m1!4b1!4m6!3m5!1s0x5148e35d00efccb3:0x5cb675df15e5f1a0!8m2!3d64.0604074!4d-139.4341842!16s%2Fg%2F11t9cy672p?entry=ttu&g_ep=EgoyMDI1MDUwNi4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D
-  Position: {x: 0, y: 0}
+  Position: {x: -80.69, y: -13.95}
   VoteTitles:
   - '"Patient 0: Sinthia"'
   - "\"Dealer\u2019s Choice (Doll Distribution)\""

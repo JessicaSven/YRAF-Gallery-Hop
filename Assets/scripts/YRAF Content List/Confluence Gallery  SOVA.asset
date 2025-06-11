@@ -23,6 +23,6 @@ MonoBehaviour:
   RavenHintScript: "\u201CCollect every stamp to unlock the secret finale. Trust
     me\u2014it\u2019s worth the squawk.\u201D\n"
   Url: https://www.google.ca/maps/place/Yukon+School+of+Visual+Arts/@64.0615253,-139.4325712,19.79z/data=!3m1!5s0x5148e3cbb5dcec59:0x68e8f15cbd388556!4m6!3m5!1s0x5148e3cbcadb8ea1:0x219f9486bdf296ed!8m2!3d64.0615782!4d-139.4322754!16s%2Fm%2F0522l9_?entry=ttu&g_ep=EgoyMDI1MDUwNi4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D
-  Position: {x: 0, y: 0}
+  Position: {x: -75.8, y: 68.5}
   VoteTitles:
   - "\"Inner Space \u2013 Outer Space\""

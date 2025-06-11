@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlaceName: Ruby's Place
   Icon: {fileID: -3103549794962549916, guid: ec459ca310d2bb947a7ec8cf7cdc490f, type: 3}
-  Color: {r: 1, g: 0.6862745, b: 0.50980395, a: 0}
+  Color: {r: 1, g: 0.6862745, b: 0.50980395, a: 1}
   Content: '"The Story So Far"
 
     Claire Gallagher
@@ -49,7 +49,7 @@ MonoBehaviour:
   RavenHintScript: "\u201CHeard whispers about a hidden vault? Finish your round
     to see what squawks back.\u201D"
   Url: https://www.google.ca/maps/place/Ruby's+Place/@64.0612051,-139.4352177,20.38z/data=!4m6!3m5!1s0x5148e3ca5449fe59:0xf84150417d22f3f4!8m2!3d64.061178!4d-139.435219!16s%2Fg%2F1tf2rw6q?entry=ttu&g_ep=EgoyMDI1MDUwNi4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D
-  Position: {x: 0, y: 0}
+  Position: {x: -148.6, y: 51.15}
   VoteTitles:
   - '"The Story So Far"'
   - '"Re: Unicorn"'
